@@ -1,0 +1,610 @@
+2024-12-04 21:47:44,415 - server.py[line:82] - INFO: Started server process [5317]
+2024-12-04 21:47:44,416 - on.py[line:48] - INFO: Waiting for application startup.
+2024-12-04 21:47:44,416 - on.py[line:62] - INFO: Application startup complete.
+2024-12-04 21:47:44,418 - server.py[line:214] - INFO: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2024-12-04 21:49:58,360 - main.py[line:102] - INFO: searching for https://arxiv.org/abs/2208.11089
+2024-12-04 21:49:59,334 - main.py[line:85] - INFO: downloaded 2208.11089v2.pdf
+2024-12-04 21:50:00,245 - main.py[line:445] - INFO: pushed to notion successfully
+2024-12-04 22:05:59,311 - main.py[line:102] - INFO: searching for https://arxiv.org/abs/2209.13276
+2024-12-04 22:06:09,487 - main.py[line:85] - INFO: downloaded 2209.13276v2.pdf
+2024-12-04 22:06:10,869 - main.py[line:445] - INFO: pushed to notion successfully
+2024-12-04 22:31:02,024 - server.py[line:262] - INFO: Shutting down
+2024-12-04 22:31:02,127 - on.py[line:67] - INFO: Waiting for application shutdown.
+2024-12-04 22:31:02,129 - on.py[line:76] - INFO: Application shutdown complete.
+2024-12-04 22:31:02,131 - server.py[line:92] - INFO: Finished server process [5317]
+2024-12-05 09:16:41,008 - main.py[line:102] - INFO: searching for https://arxiv.org/abs/1802.03426
+2024-12-05 09:16:41,011 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1802.03426&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-05 09:16:41,644 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-05 09:16:42,186 - main.py[line:85] - INFO: downloaded 1802.03426v3.pdf
+2024-12-05 09:16:43,673 - main.py[line:445] - INFO: pushed to notion successfully
+2024-12-05 09:23:42,278 - main.py[line:125] - INFO: searching for https://arxiv.org/pdf/2003.02395
+2024-12-05 09:23:42,279 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2003.02395&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-05 09:23:42,722 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-05 09:23:43,104 - main.py[line:108] - INFO: downloaded 2003.02395v3.pdf
+2024-12-05 09:23:49,933 - main.py[line:468] - INFO: pushed to notion successfully
+2024-12-07 10:53:41,186 - main.py[line:125] - INFO: searching for https://arxiv.org/abs/2208.11089
+2024-12-07 10:55:45,552 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2208.11089&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 10:55:45,949 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 10:57:23,565 - main.py[line:108] - INFO: downloaded 2208.11089v2.pdf
+2024-12-07 11:52:36,672 - main.py[line:125] - INFO: searching for https://arxiv.org/abs/2208.11089
+2024-12-07 11:52:36,678 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2208.11089&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 11:52:37,159 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 11:55:16,394 - main.py[line:108] - INFO: file 2208.11089v2.pdf already exists
+2024-12-07 12:00:12,509 - main.py[line:406] - INFO: already exists in notion
+2024-12-07 12:41:04,315 - main.py[line:125] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 12:42:57,649 - main.py[line:125] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 12:44:09,465 - main.py[line:125] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 12:44:22,450 - main.py[line:125] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 12:52:07,168 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 12:53:33,496 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 12:54:34,897 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 12:54:46,842 - main.py[line:111] - INFO: Couldnt download because of 'MyClient' object has no attribute 'pdf_url'
+2024-12-07 12:55:11,591 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 12:55:17,408 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 12:57:10,249 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 12:57:53,630 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 12:57:54,036 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 14:42:36,260 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 14:42:36,480 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 14:42:51,186 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-07 14:44:02,997 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/cond-mat/0212151
+2024-12-07 14:44:02,998 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=https%3A%2F%2Farxiv.org%2Fpdf%2Fcond-mat%2F0212151&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 14:44:03,380 - __init__.py[line:581] - INFO: Got empty first page; stopping generation
+2024-12-07 14:44:03,380 - main.py[line:166] - ERROR: search error: 
+2024-12-07 14:45:14,935 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/cond-mat/0212151
+2024-12-07 14:45:14,936 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=https%3A%2F%2Farxiv.org%2Fabs%2Fcond-mat%2F0212151&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 14:45:15,206 - __init__.py[line:581] - INFO: Got empty first page; stopping generation
+2024-12-07 14:45:15,206 - main.py[line:166] - ERROR: search error: 
+2024-12-07 14:45:45,747 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/cond-mat/0212151
+2024-12-07 14:45:45,752 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=https%3A%2F%2Farxiv.org%2Fabs%2Fcond-mat%2F0212151&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 14:45:46,060 - __init__.py[line:581] - INFO: Got empty first page; stopping generation
+2024-12-07 14:45:46,060 - main.py[line:166] - ERROR: search error: 
+2024-12-07 14:46:06,824 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/cond-mat/0212151
+2024-12-07 14:58:48,348 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/cond-mat/0212151
+2024-12-07 14:59:09,961 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=cond-mat%2F0212151&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 14:59:10,356 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:02:37,478 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/cond-mat/0212151
+2024-12-07 15:02:37,479 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=cond-mat%2F0212151&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:02:37,755 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:02:37,808 - main.py[line:111] - INFO: downloaded 0212151v2.pdf
+2024-12-07 15:02:39,200 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:06:48,224 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Viscous-bouncing.-Jha-Chantelot/e05e175f6dc5a6584738997d8b4ee63ac587c943
+2024-12-07 15:06:48,401 - main.py[line:166] - ERROR: search error: cannot access local variable 'results' where it is not associated with a value
+2024-12-07 15:10:25,555 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/1209.5377
+2024-12-07 15:10:25,560 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1209.5377&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:10:26,010 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:10:26,421 - main.py[line:111] - INFO: downloaded 1209.5377v1.pdf
+2024-12-07 15:10:27,289 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:19:11,214 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/2110.02085
+2024-12-07 15:19:11,216 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2110.02085&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:19:11,596 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:19:12,511 - main.py[line:111] - INFO: downloaded 2110.02085v2.pdf
+2024-12-07 15:19:15,851 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:20:39,400 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/1211.3854
+2024-12-07 15:20:39,400 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1211.3854&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:20:39,666 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:20:40,380 - main.py[line:111] - INFO: downloaded 1211.3854v1.pdf
+2024-12-07 15:20:41,256 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:23:37,301 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/2401.07489
+2024-12-07 15:23:37,302 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2401.07489&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:23:37,618 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:23:37,854 - main.py[line:111] - INFO: downloaded 2401.07489v1.pdf
+2024-12-07 15:23:39,842 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:25:45,811 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/2005.04485
+2024-12-07 15:25:45,811 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2005.04485&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:25:46,164 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:25:47,958 - main.py[line:111] - INFO: downloaded 2005.04485v1.pdf
+2024-12-07 15:25:49,189 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:34:04,032 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/1412.6980
+2024-12-07 15:34:04,034 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1412.6980&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:34:04,375 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:34:04,585 - main.py[line:111] - INFO: downloaded 1412.6980v9.pdf
+2024-12-07 15:34:05,523 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:36:46,953 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/2201.05624
+2024-12-07 15:36:46,954 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2201.05624&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:36:47,251 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:36:48,072 - main.py[line:111] - INFO: downloaded 2201.05624v4.pdf
+2024-12-07 15:36:48,840 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:37:36,532 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/1601.03616
+2024-12-07 15:37:36,533 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1601.03616&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:37:36,824 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:37:37,330 - main.py[line:111] - INFO: downloaded 1601.03616v3.pdf
+2024-12-07 15:37:38,615 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:37:52,569 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/physics/0608264
+2024-12-07 15:37:52,569 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=physics%2F0608264&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:37:52,857 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:37:52,901 - main.py[line:111] - INFO: downloaded 0608264v1.pdf
+2024-12-07 15:37:54,233 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:39:45,783 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/1205.2129
+2024-12-07 15:39:45,785 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1205.2129&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:39:46,066 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:39:46,298 - main.py[line:111] - INFO: downloaded 1205.2129v2.pdf
+2024-12-07 15:39:47,508 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:40:55,555 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Non-wetting-impact-of-a-sphere-onto-a-bath-and-its-Galeano-Rios-Milewski/e3121bfa5815f27e5486aca8e5ed13bb0836d1c6
+2024-12-07 15:40:56,780 - main.py[line:111] - INFO: downloaded e3121bfa5815f27e5486aca8e5ed13bb0836d1c6.pdf
+2024-12-07 15:40:57,775 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:51:21,051 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/2009.10862
+2024-12-07 15:51:21,054 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2009.10862&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 15:51:21,362 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 15:51:21,471 - main.py[line:111] - INFO: downloaded 2009.10862v5.pdf
+2024-12-07 15:51:22,379 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 15:58:28,965 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/A-pedestrian-introduction-to-fast-multipole-methods-Ying/10c1e8200af50e0b6bc6c2d1cb78ff50a621f9dc
+2024-12-07 15:58:29,177 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 15:58:29,816 - main.py[line:497] - ERROR: pushed to notion failed, {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.properties.abs.rich_text[0].text.content should be a string, instead was `null`.","request_id":"62f42c63-da75-4f72-a803-876fbc2081d8"}
+2024-12-07 15:59:07,084 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/A-pedestrian-introduction-to-fast-multipole-methods-Ying/10c1e8200af50e0b6bc6c2d1cb78ff50a621f9dc
+2024-12-07 15:59:07,386 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 15:59:07,885 - main.py[line:497] - ERROR: pushed to notion failed, {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.properties.abs.rich_text[0].text.content should be a string, instead was `null`.","request_id":"d5337d8f-bccb-4007-a2ea-23f0700fbee0"}
+2024-12-07 15:59:48,850 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/A-pedestrian-introduction-to-fast-multipole-methods-Ying/10c1e8200af50e0b6bc6c2d1cb78ff50a621f9dc
+2024-12-07 15:59:49,084 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 15:59:49,822 - main.py[line:497] - ERROR: pushed to notion failed, {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.properties.abs.rich_text[0].text.content should be a string, instead was `null`.","request_id":"7bada4be-e473-4154-b9dd-b6be5c738a7a"}
+2024-12-07 16:02:12,024 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/A-pedestrian-introduction-to-fast-multipole-methods-Ying/10c1e8200af50e0b6bc6c2d1cb78ff50a621f9dc
+2024-12-07 16:03:10,031 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 16:08:35,511 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/A-pedestrian-introduction-to-fast-multipole-methods-Ying/10c1e8200af50e0b6bc6c2d1cb78ff50a621f9dc
+2024-12-07 16:08:35,743 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 16:08:52,492 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/A-pedestrian-introduction-to-fast-multipole-methods-Ying/10c1e8200af50e0b6bc6c2d1cb78ff50a621f9dc
+2024-12-07 16:08:52,719 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 16:09:36,793 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:11:21,160 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/2308.08468.pdf
+2024-12-07 16:11:21,161 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2308.08468&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:11:21,571 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:11:22,956 - main.py[line:111] - INFO: downloaded 2308.08468v1.pdf
+2024-12-07 16:11:24,842 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:14:43,404 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/1711.10561.pdf
+2024-12-07 16:14:43,404 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1711.10561&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:14:43,669 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:14:44,040 - main.py[line:111] - INFO: downloaded 1711.10561v1.pdf
+2024-12-07 16:14:45,065 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:15:13,511 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/1801.05894.pdf#page22
+2024-12-07 16:15:13,512 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1801.05894&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:15:13,825 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:15:14,055 - main.py[line:111] - INFO: downloaded 1801.05894v1.pdf
+2024-12-07 16:15:15,083 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:24:15,277 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/2307.09142
+2024-12-07 16:24:15,278 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2307.09142&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:24:15,711 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:24:16,969 - main.py[line:111] - INFO: downloaded 2307.09142v1.pdf
+2024-12-07 16:24:18,037 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:25:43,275 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/2206.06298
+2024-12-07 16:25:43,276 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2206.06298&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:25:43,573 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:25:48,298 - main.py[line:111] - INFO: downloaded 2206.06298v2.pdf
+2024-12-07 16:25:49,856 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:27:58,256 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/2208.05935
+2024-12-07 16:27:58,257 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2208.05935&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:27:58,536 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:27:59,742 - main.py[line:111] - INFO: downloaded 2208.05935v2.pdf
+2024-12-07 16:28:01,043 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:29:16,627 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/2308.10754
+2024-12-07 16:29:16,629 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2308.10754&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:29:16,888 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:29:17,882 - main.py[line:111] - INFO: downloaded 2308.10754v2.pdf
+2024-12-07 16:29:18,852 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:30:22,560 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Bayesian-Machine-Learning-in-Metamaterial-Design%3A-Bessa-G%C5%82owacki/ced23639a3a4c9e04418fe03f0506778476402b5
+2024-12-07 16:30:22,891 - main.py[line:166] - ERROR: search error: cannot access local variable 'results' where it is not associated with a value
+2024-12-07 16:31:03,398 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Bayesian-Machine-Learning-in-Metamaterial-Design/ced23639a3a4c9e04418fe03f0506778476402b5
+2024-12-07 16:31:03,895 - main.py[line:111] - INFO: downloaded ced23639a3a4c9e04418fe03f0506778476402b5.pdf
+2024-12-07 16:31:06,137 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:32:37,926 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/1811.11538
+2024-12-07 16:32:37,928 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1811.11538&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:32:38,479 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:32:41,363 - main.py[line:111] - INFO: downloaded 1811.11538v6.pdf
+2024-12-07 16:32:43,063 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:35:16,623 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/1909.13643
+2024-12-07 16:35:16,623 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1909.13643&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:35:16,885 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:35:17,392 - main.py[line:111] - INFO: downloaded 1909.13643v1.pdf
+2024-12-07 16:35:19,294 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:36:24,641 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/2306.03675
+2024-12-07 16:36:24,642 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2306.03675&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:36:24,923 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:36:26,256 - main.py[line:111] - INFO: downloaded 2306.03675v2.pdf
+2024-12-07 16:36:27,657 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:41:56,455 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/2402.17873
+2024-12-07 16:41:56,456 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2402.17873&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-07 16:41:56,760 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-07 16:41:56,848 - main.py[line:111] - INFO: downloaded 2402.17873v2.pdf
+2024-12-07 16:41:58,135 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-07 16:46:29,015 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Cultivated-Meat-Modeling-Consortium%3A-Inaugural-Kahan-Camphuijsen/32cc17e15da077e1a0bc49aa347ad4fea243ee60
+2024-12-07 16:46:29,203 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-07 16:46:31,408 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-09 09:18:54,068 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Tunneling-with-a-hydrodynamic-pilot-wave-model-Nachbin-Milewski/1e082357427a267b6fb5425cdf11a2fbd4ab9492
+2024-12-09 09:18:54,257 - main.py[line:166] - ERROR: search error: cannot access local variable 'results' where it is not associated with a value
+2024-12-09 09:19:42,867 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Tunil/1e082357427a267b6fb5425cdf11a2fbd4ab9492
+2024-12-09 09:19:43,004 - main.py[line:166] - ERROR: search error: cannot access local variable 'results' where it is not associated with a value
+2024-12-09 09:29:03,421 - main.py[line:128] - INFO: searching for https://arxiv.org/pdf/2310.12886
+2024-12-09 09:29:03,422 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2310.12886&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-09 09:29:12,455 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-09 09:29:12,544 - main.py[line:111] - INFO: downloaded 2310.12886v1.pdf
+2024-12-09 09:29:14,892 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-13 10:58:46,685 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Free-Surface-Flow-and-Fluid-Object-Interaction-With-Akkerman-Bazilevs/9cc24cbbdb7a6007092f47aa1e8d9663a245e83f
+2024-12-13 10:58:46,958 - main.py[line:166] - ERROR: search error: cannot access local variable 'results' where it is not associated with a value
+2024-12-13 10:59:19,716 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/2312.10134
+2024-12-13 10:59:19,720 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2312.10134&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-13 10:59:20,044 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-13 11:03:53,299 - main.py[line:128] - INFO: searching for https://arxiv.org/abs/2312.10134
+2024-12-13 11:03:53,301 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2312.10134&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-13 11:03:53,538 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-13 11:07:09,938 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Free-Surface-Flow-and-Fluid-Object-Interaction-With-Akkerman-Bazilevs/9cc24cbbdb7a6007092f47aa1e8d9663a245e83f
+2024-12-13 11:19:00,056 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Free-Surface-Flow-and-Fluid-Object-Interaction-With-Akkerman-Bazilevs/9cc24cbbdb7a6007092f47aa1e8d9663a245e83f
+2024-12-13 11:25:11,013 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Free-Surface-Flow-and-Fluid-Object-Interaction-With-Akkerman-Bazilevs/9cc24cbbdb7a6007092f47aa1e8d9663a245e83f
+2024-12-13 11:26:27,983 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Free-Surface-Flow-and-Fluid-Object-Interaction-With-Akkerman-Bazilevs/9cc24cbbdb7a6007092f47aa1e8d9663a245e83f
+2024-12-13 11:26:28,145 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-13 11:29:09,207 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Free-Surface-Flow-and-Fluid-Object-Interaction-With-Akkerman-Bazilevs/9cc24cbbdb7a6007092f47aa1e8d9663a245e83f
+2024-12-13 11:29:09,472 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-13 11:29:10,538 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-13 11:53:00,027 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Isogeometric-analysis-of-free-surface-flow-Akkerman-Bazilevs/da79e397f4445827b02c138f9e1c5c993b0aecbf
+2024-12-13 11:53:00,244 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-13 11:53:02,109 - main.py[line:497] - ERROR: pushed to notion failed, {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.properties.abs.rich_text[0].text.content should be a string, instead was `{\"model\":\"tldr@v2.0.0\",\"text\":\"The numerical tests indi...`.","request_id":"4a1376a4-3ef8-4b9b-9aee-824463176844"}
+2024-12-13 11:54:18,299 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Isogeometric-analysis-of-free-surface-flow-Akkerman-Bazilevs/da79e397f4445827b02c138f9e1c5c993b0aecbf
+2024-12-13 11:54:18,463 - main.py[line:166] - ERROR: search error: cannot access local variable 'results' where it is not associated with a value
+2024-12-13 11:54:57,451 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Isogeometric-analysis-of-free-surface-flow-Akkerman-Bazilevs/da79e397f4445827b02c138f9e1c5c993b0aecbf
+2024-12-13 11:54:57,585 - main.py[line:166] - ERROR: search error: cannot access local variable 'results' where it is not associated with a value
+2024-12-13 11:55:23,934 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Isogeometric-analysis-of-free-surface-flow-Akkerman-Bazilevs/da79e397f4445827b02c138f9e1c5c993b0aecbf
+2024-12-13 11:56:03,421 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-13 11:56:41,089 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Isogeometric-analysis-of-free-surface-flow-Akkerman-Bazilevs/da79e397f4445827b02c138f9e1c5c993b0aecbf
+2024-12-13 11:56:41,388 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-13 11:56:42,981 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-16 22:03:01,324 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Application-of-the-Poor-Man%27s-Navier-Stokes-to-of-Polly-McDonough/2239efd7421b81fceecc46d3ba86da80c52ad837
+2024-12-16 22:03:01,630 - main.py[line:166] - ERROR: search error: cannot access local variable 'results' where it is not associated with a value
+2024-12-16 22:12:11,542 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/Application-of-the-Poor-Man%27s-Navier-Stokes-to-of-Polly-McDonough/2239efd7421b81fceecc46d3ba86da80c52ad837
+2024-12-16 22:12:11,874 - main.py[line:166] - ERROR: search error: cannot access local variable 'results' where it is not associated with a value
+2024-12-16 22:23:05,811 - main.py[line:128] - INFO: searching for https://www.semanticscholar.org/paper/A-conservative-level-set-method-suitable-for-and-Kees-Akkerman/1e44df558ba276e0b2e29d5da772e87af80caca4
+2024-12-16 22:23:06,190 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-16 22:23:07,769 - main.py[line:494] - INFO: pushed to notion successfully
+2024-12-17 10:00:56,260 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:11:59,839 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:13:10,210 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:18:22,899 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:18:41,224 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:21:06,609 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:21:06,849 - main.py[line:170] - ERROR: search error: 'MyClient' object is not an iterator
+2024-12-17 10:22:22,994 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:24:06,593 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:25:03,538 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:25:03,762 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-17 10:25:04,965 - main.py[line:502] - INFO: pushed to notion successfully
+2024-12-17 10:27:32,684 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cma.2007.07.016
+2024-12-17 10:27:32,871 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-17 10:27:33,401 - main.py[line:440] - INFO: already exists in notion
+2024-12-19 15:54:53,002 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/1509.03580
+2024-12-19 15:55:56,304 - main.py[line:127] - INFO: searching for https://arxiv.org/abs/cond-mat/0212151
+2024-12-19 15:57:13,181 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/1509.03580
+2024-12-19 15:57:13,182 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1509.03580&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-19 15:57:13,511 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-19 15:58:11,032 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/1509.03580
+2024-12-19 15:58:11,034 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1509.03580&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-19 15:58:11,291 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-19 15:58:12,086 - main.py[line:111] - INFO: downloaded 1509.03580v1.pdf
+2024-12-19 15:58:13,023 - main.py[line:506] - ERROR: pushed to notion failed, {"object":"error","status":400,"code":"validation_error","message":"Select option color doesn't match existing for 96f697ed-4748-418c-997a-e0c828f9d81b.","request_id":"25f32aa8-cec7-47e8-9e04-17df0f223bd1"}
+2024-12-19 15:58:27,887 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/1509.03580
+2024-12-19 15:58:27,887 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1509.03580&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-19 15:58:28,125 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-19 15:58:28,126 - main.py[line:111] - INFO: file 1509.03580v1.pdf already exists
+2024-12-19 15:58:29,039 - main.py[line:506] - ERROR: pushed to notion failed, {"object":"error","status":400,"code":"validation_error","message":"Select option color doesn't match existing for 96f697ed-4748-418c-997a-e0c828f9d81b.","request_id":"2cb65a15-ad18-4916-877d-0dfd186d16ef"}
+2024-12-19 15:59:23,941 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/1509.03580
+2024-12-19 15:59:23,942 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1509.03580&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-19 15:59:24,194 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-19 15:59:24,195 - main.py[line:111] - INFO: file 1509.03580v1.pdf already exists
+2024-12-19 15:59:24,961 - main.py[line:506] - ERROR: pushed to notion failed, {"object":"error","status":400,"code":"validation_error","message":"Select option color doesn't match existing for 96f697ed-4748-418c-997a-e0c828f9d81b.","request_id":"3d981d7b-4767-4170-a608-9fbcda9aa5ab"}
+2024-12-19 15:59:51,314 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/1509.03580
+2024-12-19 15:59:51,315 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1509.03580&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-19 15:59:51,584 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-19 15:59:51,585 - main.py[line:111] - INFO: file 1509.03580v1.pdf already exists
+2024-12-19 15:59:54,912 - main.py[line:503] - INFO: pushed to notion successfully
+2024-12-19 16:13:03,823 - main.py[line:127] - INFO: searching for https://arxiv.org/abs/2205.04611
+2024-12-19 16:13:03,824 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2205.04611&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-19 16:13:04,082 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-19 16:13:04,170 - main.py[line:111] - INFO: downloaded 2205.04611v1.pdf
+2024-12-19 16:13:06,475 - main.py[line:503] - INFO: pushed to notion successfully
+2024-12-20 15:01:20,830 - main.py[line:127] - INFO: searching for https://doi.org/10.1063/5.0130043
+2024-12-20 15:01:21,387 - main.py[line:111] - INFO: downloaded 127a6ed5a1a1b64d3342fe4a30b3f8005a84c3cb.pdf
+2024-12-20 15:01:22,403 - main.py[line:503] - INFO: pushed to notion successfully
+2024-12-20 17:08:00,886 - main.py[line:127] - INFO: searching for https://arxiv.org/abs/cond-mat/0212151
+2024-12-20 17:08:00,889 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=cond-mat%2F0212151&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-20 17:08:01,347 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-20 17:14:20,895 - main.py[line:127] - INFO: searching for https://doi.org/http://arxiv.org/abs/cond-mat/0212151v2
+2024-12-20 17:14:21,097 - main.py[line:155] - INFO: Request failed with status code 404: {"error":"Paper with id doi:http://arxiv.org/abs/cond-mat/0212151v2 not found"}
+
+2024-12-20 17:14:47,291 - main.py[line:127] - INFO: searching for https://doi.org/10.1209/epl/i2003-00340-1
+2024-12-20 17:16:10,804 - main.py[line:127] - INFO: searching for https://arxiv.org/abs/cond-mat/0212151
+2024-12-20 17:16:30,692 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=cond-mat%2F0212151&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-12-20 17:16:31,054 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2024-12-20 17:24:34,590 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.physleta.2007.09.027
+2024-12-20 17:24:34,942 - main.py[line:111] - INFO: downloaded ec94a7cdb64918e869075a9a9e06b6b216592c59.pdf
+2024-12-20 17:24:35,822 - main.py[line:510] - INFO: pushed to notion successfully
+2024-12-20 17:26:29,178 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.physleta.2007.09.027
+2024-12-20 17:26:29,420 - main.py[line:111] - INFO: file ec94a7cdb64918e869075a9a9e06b6b216592c59.pdf already exists
+2024-12-20 17:26:30,598 - main.py[line:509] - INFO: pushed to notion successfully
+2024-12-20 18:41:49,489 - main.py[line:405] - INFO: semantic_scholar searching for Physics of droplet impact on various substrates and its current advancements in interfacial science: A review
+2024-12-20 18:41:50,560 - main.py[line:351] - INFO: SS search title found for Physics of droplet impact on various substrates and its current advancements in interfacial science: A review, paper id is 127a6ed5a1a1b64d3342fe4a30b3f8005a84c3cb
+2024-12-20 18:41:50,815 - main.py[line:384] - WARNING: SS error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for 127a6ed5a1a1b64d3342fe4a30b3f8005a84c3cb
+2024-12-20 18:44:41,963 - main.py[line:381] - INFO: SS citation found for 127a6ed5a1a1b64d3342fe4a30b3f8005a84c3cb
+2024-12-20 18:44:43,238 - main.py[line:294] - INFO: ==== bib Physics of droplet impact on various substrates and its current advancements in interfacial science: A review updated sucess
+2024-12-20 18:44:43,239 - main.py[line:405] - INFO: semantic_scholar searching for Optimizing a DIscrete Loss (ODIL) to solve forward and inverse problems for partial differential equations using machine learning tools
+2024-12-20 18:44:43,352 - main.py[line:359] - WARNING: SS search title error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for Optimizing a DIscrete Loss (ODIL) to solve forward and inverse problems for partial differential equations using machine learning tools
+2024-12-20 18:45:36,806 - main.py[line:405] - INFO: semantic_scholar searching for Optimizing a DIscrete Loss (ODIL) to solve forward and inverse problems for partial differential equations using machine learning tools
+2024-12-20 18:45:38,299 - main.py[line:356] - ERROR: SS search title error: Title match not found for Optimizing a DIscrete Loss (ODIL) to solve forward and inverse problems for partial differential equations using machine learning tools
+2024-12-20 18:45:39,801 - main.py[line:294] - INFO: ==== bib Optimizing a DIscrete Loss (ODIL) to solve forward and inverse problems for partial differential equations using machine learning tools updated bib not found
+2024-12-20 18:45:39,801 - main.py[line:405] - INFO: semantic_scholar searching for Discovering governing equations from data: Sparse identification of nonlinear dynamical systems
+2024-12-20 18:45:40,674 - main.py[line:351] - INFO: SS search title found for Discovering governing equations from data: Sparse identification of nonlinear dynamical systems, paper id is 5d150cec2775f9bc863760448f14104cc8f42368
+2024-12-20 18:45:40,827 - main.py[line:381] - INFO: SS citation found for 5d150cec2775f9bc863760448f14104cc8f42368
+2024-12-20 18:45:41,742 - main.py[line:294] - INFO: ==== bib Discovering governing equations from data: Sparse identification of nonlinear dynamical systems updated sucess
+2024-12-20 18:45:41,743 - main.py[line:405] - INFO: semantic_scholar searching for Variational multiscale residual-based turbulence modeling for large eddy simulation of incompressible flows
+2024-12-20 18:45:42,623 - main.py[line:351] - INFO: SS search title found for Variational multiscale residual-based turbulence modeling for large eddy simulation of incompressible flows, paper id is c7357f3912a74ed1d4558b3b88c287ce4d710aee
+2024-12-20 18:45:42,772 - main.py[line:381] - INFO: SS citation found for c7357f3912a74ed1d4558b3b88c287ce4d710aee
+2024-12-20 18:45:43,505 - main.py[line:294] - INFO: ==== bib Variational multiscale residual-based turbulence modeling for large eddy simulation of incompressible flows updated sucess
+2024-12-20 18:45:43,506 - main.py[line:405] - INFO: semantic_scholar searching for A conservative level set method suitable for variable-order approximations and unstructured meshes
+2024-12-20 18:45:44,238 - main.py[line:351] - INFO: SS search title found for A conservative level set method suitable for variable-order approximations and unstructured meshes, paper id is 1e44df558ba276e0b2e29d5da772e87af80caca4
+2024-12-20 18:45:44,524 - main.py[line:381] - INFO: SS citation found for 1e44df558ba276e0b2e29d5da772e87af80caca4
+2024-12-20 18:45:45,204 - main.py[line:294] - INFO: ==== bib A conservative level set method suitable for variable-order approximations and unstructured meshes updated sucess
+2024-12-20 18:45:45,204 - main.py[line:405] - INFO: semantic_scholar searching for Application of the Poor Man′s Navier-Stokes Equations to Real-Time Control of Fluid Flow
+2024-12-20 18:45:46,411 - main.py[line:351] - INFO: SS search title found for Application of the Poor Man′s Navier-Stokes Equations to Real-Time Control of Fluid Flow, paper id is 2239efd7421b81fceecc46d3ba86da80c52ad837
+2024-12-20 18:45:46,602 - main.py[line:381] - INFO: SS citation found for 2239efd7421b81fceecc46d3ba86da80c52ad837
+2024-12-20 18:45:47,082 - main.py[line:294] - INFO: ==== bib Application of the Poor Man′s Navier-Stokes Equations to Real-Time Control of Fluid Flow updated sucess
+2024-12-20 18:45:47,082 - main.py[line:405] - INFO: semantic_scholar searching for Isogeometric analysis of free-surface flow
+2024-12-20 18:45:50,664 - main.py[line:351] - INFO: SS search title found for Isogeometric analysis of free-surface flow, paper id is da79e397f4445827b02c138f9e1c5c993b0aecbf
+2024-12-20 18:45:50,819 - main.py[line:381] - INFO: SS citation found for da79e397f4445827b02c138f9e1c5c993b0aecbf
+2024-12-20 18:45:51,394 - main.py[line:294] - INFO: ==== bib Isogeometric analysis of free-surface flow updated sucess
+2024-12-20 18:45:51,394 - main.py[line:405] - INFO: semantic_scholar searching for Free-Surface Flow and Fluid-Object Interaction Modeling With Emphasis on Ship Hydrodynamics
+2024-12-20 18:45:52,142 - main.py[line:351] - INFO: SS search title found for Free-Surface Flow and Fluid-Object Interaction Modeling With Emphasis on Ship Hydrodynamics, paper id is 9cc24cbbdb7a6007092f47aa1e8d9663a245e83f
+2024-12-20 18:45:52,349 - main.py[line:381] - INFO: SS citation found for 9cc24cbbdb7a6007092f47aa1e8d9663a245e83f
+2024-12-20 18:45:53,032 - main.py[line:294] - INFO: ==== bib Free-Surface Flow and Fluid-Object Interaction Modeling With Emphasis on Ship Hydrodynamics updated sucess
+2024-12-20 18:45:53,032 - main.py[line:405] - INFO: semantic_scholar searching for On wave-driven propulsion
+2024-12-20 18:45:53,531 - main.py[line:351] - INFO: SS search title found for On wave-driven propulsion, paper id is d6716f49955465a62b53a9d7b3e6616a905c0b2d
+2024-12-20 18:45:53,711 - main.py[line:381] - INFO: SS citation found for d6716f49955465a62b53a9d7b3e6616a905c0b2d
+2024-12-20 18:45:54,202 - main.py[line:294] - INFO: ==== bib On wave-driven propulsion updated sucess
+2024-12-20 18:45:54,203 - main.py[line:405] - INFO: semantic_scholar searching for Tunneling with a hydrodynamic pilot-wave model
+2024-12-20 18:45:54,918 - main.py[line:351] - INFO: SS search title found for Tunneling with a hydrodynamic pilot-wave model, paper id is 1e082357427a267b6fb5425cdf11a2fbd4ab9492
+2024-12-20 18:45:55,061 - main.py[line:381] - INFO: SS citation found for 1e082357427a267b6fb5425cdf11a2fbd4ab9492
+2024-12-20 18:45:55,435 - main.py[line:294] - INFO: ==== bib Tunneling with a hydrodynamic pilot-wave model updated sucess
+2024-12-20 18:45:55,436 - main.py[line:405] - INFO: semantic_scholar searching for Modeling the biomechanics of cells on microcarriers in a stirred-tank bioreactor: an ABM-CFD coupling approach
+2024-12-20 18:45:56,096 - main.py[line:356] - ERROR: SS search title error: Title match not found for Modeling the biomechanics of cells on microcarriers in a stirred-tank bioreactor: an ABM-CFD coupling approach
+2024-12-20 18:45:56,878 - main.py[line:294] - INFO: ==== bib Modeling the biomechanics of cells on microcarriers in a stirred-tank bioreactor: an ABM-CFD coupling approach updated bib not found
+2024-12-20 18:45:56,878 - main.py[line:405] - INFO: semantic_scholar searching for Cultivated Meat Modeling Consortium: Inaugural Meeting Whitepaper
+2024-12-20 18:45:57,043 - main.py[line:359] - WARNING: SS search title error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for Cultivated Meat Modeling Consortium: Inaugural Meeting Whitepaper
+2024-12-20 18:46:00,756 - main.py[line:351] - INFO: SS search title found for Cultivated Meat Modeling Consortium: Inaugural Meeting Whitepaper, paper id is 32cc17e15da077e1a0bc49aa347ad4fea243ee60
+2024-12-20 18:46:00,911 - main.py[line:381] - INFO: SS citation found for 32cc17e15da077e1a0bc49aa347ad4fea243ee60
+2024-12-20 18:46:01,505 - main.py[line:294] - INFO: ==== bib Cultivated Meat Modeling Consortium: Inaugural Meeting Whitepaper updated sucess
+2024-12-20 18:46:01,505 - main.py[line:405] - INFO: semantic_scholar searching for Machine Learning in Fluid Dynamics
+2024-12-20 18:46:02,409 - main.py[line:351] - INFO: SS search title found for Machine Learning in Fluid Dynamics, paper id is 0073f9a960126e285a20391c1fdc891b703fbebf
+2024-12-20 18:46:02,567 - main.py[line:381] - INFO: SS citation found for 0073f9a960126e285a20391c1fdc891b703fbebf
+2024-12-20 18:46:03,443 - main.py[line:294] - INFO: ==== bib Machine Learning in Fluid Dynamics updated sucess
+2024-12-20 18:46:03,443 - main.py[line:405] - INFO: semantic_scholar searching for Randomized matrix computations: Themes and variations
+2024-12-20 18:46:04,093 - main.py[line:351] - INFO: SS search title found for Randomized matrix computations: Themes and variations, paper id is 60416adeba3f7a61cada4602f6701baf4f7bdd14
+2024-12-20 18:46:04,269 - main.py[line:381] - INFO: SS citation found for 60416adeba3f7a61cada4602f6701baf4f7bdd14
+2024-12-20 18:46:04,677 - main.py[line:294] - INFO: ==== bib Randomized matrix computations: Themes and variations updated sucess
+2024-12-20 18:46:04,677 - main.py[line:405] - INFO: semantic_scholar searching for  A gentle introduction to the FEM Method
+2024-12-20 18:46:05,504 - main.py[line:356] - ERROR: SS search title error: Title match not found for  A gentle introduction to the FEM Method
+2024-12-20 18:46:06,050 - main.py[line:294] - INFO: ==== bib  A gentle introduction to the FEM Method updated bib not found
+2024-12-20 18:46:06,051 - main.py[line:405] - INFO: semantic_scholar searching for Potential of the Julia programming language for high energy physics computing
+2024-12-20 18:46:06,815 - main.py[line:351] - INFO: SS search title found for Potential of the Julia programming language for high energy physics computing, paper id is e4633b0e1fc0f14eca46b81ce72688bd53d3c49a
+2024-12-20 18:46:06,992 - main.py[line:381] - INFO: SS citation found for e4633b0e1fc0f14eca46b81ce72688bd53d3c49a
+2024-12-20 18:46:07,471 - main.py[line:294] - INFO: ==== bib Potential of the Julia programming language for high energy physics computing updated sucess
+2024-12-20 18:46:07,471 - main.py[line:405] - INFO: semantic_scholar searching for How Dualists Should (Not) Respond to the Objection from Energy Conservation
+2024-12-20 18:46:08,056 - main.py[line:351] - INFO: SS search title found for How Dualists Should (Not) Respond to the Objection from Energy Conservation, paper id is 3210eb51c22a2896bb532623d88b009690b64bfe
+2024-12-20 18:46:08,207 - main.py[line:381] - INFO: SS citation found for 3210eb51c22a2896bb532623d88b009690b64bfe
+2024-12-20 18:46:08,860 - main.py[line:294] - INFO: ==== bib How Dualists Should (Not) Respond to the Objection from Energy Conservation updated sucess
+2024-12-20 18:46:08,861 - main.py[line:405] - INFO: semantic_scholar searching for Is justified True Belief Knowledge?
+2024-12-20 18:46:09,655 - main.py[line:351] - INFO: SS search title found for Is justified True Belief Knowledge?, paper id is 3605d1196b1cf9738a0055099dab996c4d5e42be
+2024-12-20 18:46:09,807 - main.py[line:381] - INFO: SS citation found for 3605d1196b1cf9738a0055099dab996c4d5e42be
+2024-12-20 18:46:10,422 - main.py[line:294] - INFO: ==== bib Is justified True Belief Knowledge? updated sucess
+2024-12-20 18:46:10,422 - main.py[line:405] - INFO: semantic_scholar searching for A Tutorial on Formulating and Using QUBO Models
+2024-12-20 18:46:11,076 - main.py[line:351] - INFO: SS search title found for A Tutorial on Formulating and Using QUBO Models, paper id is 2691557c5d9d1e8ace7fd63bb8f056e2407f6d4b
+2024-12-20 18:46:11,234 - main.py[line:381] - INFO: SS citation found for 2691557c5d9d1e8ace7fd63bb8f056e2407f6d4b
+2024-12-20 18:46:11,726 - main.py[line:294] - INFO: ==== bib A Tutorial on Formulating and Using QUBO Models updated sucess
+2024-12-20 18:46:11,727 - main.py[line:405] - INFO: semantic_scholar searching for Bayesian Machine Learning in Metamaterial Design: Fragile Becomes Supercompressible
+2024-12-20 18:46:12,295 - main.py[line:351] - INFO: SS search title found for Bayesian Machine Learning in Metamaterial Design: Fragile Becomes Supercompressible, paper id is ced23639a3a4c9e04418fe03f0506778476402b5
+2024-12-20 18:46:12,429 - main.py[line:384] - WARNING: SS error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for ced23639a3a4c9e04418fe03f0506778476402b5
+2024-12-20 18:46:15,614 - main.py[line:381] - INFO: SS citation found for ced23639a3a4c9e04418fe03f0506778476402b5
+2024-12-20 18:46:16,361 - main.py[line:294] - INFO: ==== bib Bayesian Machine Learning in Metamaterial Design: Fragile Becomes Supercompressible updated sucess
+2024-12-20 18:46:16,362 - main.py[line:405] - INFO: semantic_scholar searching for Similarity solutions in elastohydrodynamic bouncing
+2024-12-20 18:46:16,931 - main.py[line:351] - INFO: SS search title found for Similarity solutions in elastohydrodynamic bouncing, paper id is bea715c4197e08362e1b978c75ed75f3496d0897
+2024-12-20 18:46:17,170 - main.py[line:384] - WARNING: SS error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for bea715c4197e08362e1b978c75ed75f3496d0897
+2024-12-20 18:46:20,614 - main.py[line:381] - INFO: SS citation found for bea715c4197e08362e1b978c75ed75f3496d0897
+2024-12-20 18:46:21,197 - main.py[line:294] - INFO: ==== bib Similarity solutions in elastohydrodynamic bouncing updated sucess
+2024-12-20 18:46:21,197 - main.py[line:405] - INFO: semantic_scholar searching for When does an impacting drop stop bouncing?
+2024-12-20 18:46:21,807 - main.py[line:351] - INFO: SS search title found for When does an impacting drop stop bouncing?, paper id is 7c93e34fd78dfdd4fa6506a3d50e89eefe810377
+2024-12-20 18:46:21,983 - main.py[line:381] - INFO: SS citation found for 7c93e34fd78dfdd4fa6506a3d50e89eefe810377
+2024-12-20 18:46:22,701 - main.py[line:294] - INFO: ==== bib When does an impacting drop stop bouncing? updated sucess
+2024-12-20 18:46:22,701 - main.py[line:405] - INFO: semantic_scholar searching for Physics Based Deep Learning
+2024-12-20 18:46:23,171 - main.py[line:351] - INFO: SS search title found for Physics Based Deep Learning, paper id is 7eb1b541723f308f4cc2e793f1c5a56f8fdf1f47
+2024-12-20 18:46:23,309 - main.py[line:384] - WARNING: SS error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for 7eb1b541723f308f4cc2e793f1c5a56f8fdf1f47
+2024-12-20 18:46:26,454 - main.py[line:381] - INFO: SS citation found for 7eb1b541723f308f4cc2e793f1c5a56f8fdf1f47
+2024-12-20 18:46:27,440 - main.py[line:294] - INFO: ==== bib Physics Based Deep Learning updated sucess
+2024-12-20 18:46:27,440 - main.py[line:405] - INFO: semantic_scholar searching for Drop impact on viscous liquid films
+2024-12-20 18:46:28,803 - main.py[line:351] - INFO: SS search title found for Drop impact on viscous liquid films, paper id is 8390ac6635e7d02ec2660a9ff336d2a9e3f17978
+2024-12-20 18:46:28,950 - main.py[line:381] - INFO: SS citation found for 8390ac6635e7d02ec2660a9ff336d2a9e3f17978
+2024-12-20 18:46:30,353 - main.py[line:294] - INFO: ==== bib Drop impact on viscous liquid films updated sucess
+2024-12-20 18:46:30,353 - main.py[line:405] - INFO: semantic_scholar searching for Characterization of partial wetting by CMAS droplets using multiphase many-body dissipative particle dynamics and data-driven discovery based on PINNs
+2024-12-20 18:46:31,367 - main.py[line:351] - INFO: SS search title found for Characterization of partial wetting by CMAS droplets using multiphase many-body dissipative particle dynamics and data-driven discovery based on PINNs, paper id is d4e12cf06968baa0c8f2f3ac8f34987b52ab8965
+2024-12-20 18:46:31,508 - main.py[line:381] - INFO: SS citation found for d4e12cf06968baa0c8f2f3ac8f34987b52ab8965
+2024-12-20 18:46:32,230 - main.py[line:294] - INFO: ==== bib Characterization of partial wetting by CMAS droplets using multiphase many-body dissipative particle dynamics and data-driven discovery based on PINNs updated sucess
+2024-12-20 18:46:32,230 - main.py[line:405] - INFO: semantic_scholar searching for A quasi static model of a drop impact
+2024-12-20 18:46:32,914 - main.py[line:351] - INFO: SS search title found for A quasi static model of a drop impact, paper id is 24f59763455eaa54718d83f720a909585a4fd170
+2024-12-20 18:46:33,070 - main.py[line:381] - INFO: SS citation found for 24f59763455eaa54718d83f720a909585a4fd170
+2024-12-20 18:46:33,506 - main.py[line:294] - INFO: ==== bib A quasi static model of a drop impact updated sucess
+2024-12-20 18:46:33,506 - main.py[line:405] - INFO: semantic_scholar searching for Deep Learning: An Introduction for Applied Mathematicians
+2024-12-20 18:46:33,637 - main.py[line:359] - WARNING: SS search title error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for Deep Learning: An Introduction for Applied Mathematicians
+2024-12-20 18:46:37,246 - main.py[line:351] - INFO: SS search title found for Deep Learning: An Introduction for Applied Mathematicians, paper id is bc0e0878a169273ebf909a76a6e4b4d030247f11
+2024-12-20 18:46:37,393 - main.py[line:381] - INFO: SS citation found for bc0e0878a169273ebf909a76a6e4b4d030247f11
+2024-12-20 18:46:37,822 - main.py[line:294] - INFO: ==== bib Deep Learning: An Introduction for Applied Mathematicians updated sucess
+2024-12-20 18:46:37,822 - main.py[line:405] - INFO: semantic_scholar searching for Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations
+2024-12-20 18:46:38,872 - main.py[line:351] - INFO: SS search title found for Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations, paper id is fa352e8e4d9ec2f4b66965dd9cea75167950152a
+2024-12-20 18:46:39,003 - main.py[line:384] - WARNING: SS error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for fa352e8e4d9ec2f4b66965dd9cea75167950152a
+2024-12-20 18:46:42,156 - main.py[line:381] - INFO: SS citation found for fa352e8e4d9ec2f4b66965dd9cea75167950152a
+2024-12-20 18:46:42,703 - main.py[line:294] - INFO: ==== bib Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations updated sucess
+2024-12-20 18:46:42,703 - main.py[line:405] - INFO: semantic_scholar searching for An Expert's Guide to Training Physics-informed Neural Networks
+2024-12-20 18:46:43,370 - main.py[line:351] - INFO: SS search title found for An Expert's Guide to Training Physics-informed Neural Networks, paper id is bce9e0d9104a0bdb0c6a5cdf31109a874790fce9
+2024-12-20 18:46:43,514 - main.py[line:381] - INFO: SS citation found for bce9e0d9104a0bdb0c6a5cdf31109a874790fce9
+2024-12-20 18:46:44,050 - main.py[line:294] - INFO: ==== bib An Expert's Guide to Training Physics-informed Neural Networks updated sucess
+2024-12-20 18:46:44,050 - main.py[line:405] - INFO: semantic_scholar searching for A pedestrian introduction to fast multipole methods
+2024-12-20 18:46:44,337 - main.py[line:359] - WARNING: SS search title error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for A pedestrian introduction to fast multipole methods
+2024-12-20 18:46:48,087 - main.py[line:351] - INFO: SS search title found for A pedestrian introduction to fast multipole methods, paper id is 10c1e8200af50e0b6bc6c2d1cb78ff50a621f9dc
+2024-12-20 18:46:48,244 - main.py[line:381] - INFO: SS citation found for 10c1e8200af50e0b6bc6c2d1cb78ff50a621f9dc
+2024-12-20 18:46:48,704 - main.py[line:294] - INFO: ==== bib A pedestrian introduction to fast multipole methods updated sucess
+2024-12-20 18:46:48,704 - main.py[line:405] - INFO: semantic_scholar searching for An Intuitive Tutorial to Gaussian Process Regression
+2024-12-20 18:46:49,500 - main.py[line:351] - INFO: SS search title found for An Intuitive Tutorial to Gaussian Process Regression, paper id is a229f5f80219727534086baabb654d5022f10fb6
+2024-12-20 18:46:49,649 - main.py[line:381] - INFO: SS citation found for a229f5f80219727534086baabb654d5022f10fb6
+2024-12-20 18:46:50,076 - main.py[line:294] - INFO: ==== bib An Intuitive Tutorial to Gaussian Process Regression updated sucess
+2024-12-20 18:46:50,076 - main.py[line:405] - INFO: semantic_scholar searching for Non-wetting impact of a sphere onto a bath and its application to bouncing droplets
+2024-12-20 18:46:51,327 - main.py[line:351] - INFO: SS search title found for Non-wetting impact of a sphere onto a bath and its application to bouncing droplets, paper id is e3121bfa5815f27e5486aca8e5ed13bb0836d1c6
+2024-12-20 18:46:51,971 - main.py[line:381] - INFO: SS citation found for e3121bfa5815f27e5486aca8e5ed13bb0836d1c6
+2024-12-20 18:46:52,750 - main.py[line:294] - INFO: ==== bib Non-wetting impact of a sphere onto a bath and its application to bouncing droplets updated sucess
+2024-12-20 18:46:52,769 - main.py[line:405] - INFO: semantic_scholar searching for Isogeometric analysis: an overview and computer implementation aspects
+2024-12-20 18:46:54,271 - main.py[line:351] - INFO: SS search title found for Isogeometric analysis: an overview and computer implementation aspects, paper id is ba47d16970726fccc4acaceb6c24e3316aeb27a9
+2024-12-20 18:46:54,894 - main.py[line:381] - INFO: SS citation found for ba47d16970726fccc4acaceb6c24e3316aeb27a9
+2024-12-20 18:46:55,859 - main.py[line:294] - INFO: ==== bib Isogeometric analysis: an overview and computer implementation aspects updated sucess
+2024-12-20 18:46:55,860 - main.py[line:405] - INFO: semantic_scholar searching for Noether's theorem in classical mechanics revisited
+2024-12-20 18:46:56,833 - main.py[line:351] - INFO: SS search title found for Noether's theorem in classical mechanics revisited, paper id is 490c45febb3c1650bc03eff1b92f179ba75681f1
+2024-12-20 18:46:57,107 - main.py[line:381] - INFO: SS citation found for 490c45febb3c1650bc03eff1b92f179ba75681f1
+2024-12-20 18:46:58,283 - main.py[line:294] - INFO: ==== bib Noether's theorem in classical mechanics revisited updated sucess
+2024-12-20 18:46:58,283 - main.py[line:405] - INFO: semantic_scholar searching for A short review on Noether's theorems, gauge symmetries and boundary terms
+2024-12-20 18:46:59,063 - main.py[line:351] - INFO: SS search title found for A short review on Noether's theorems, gauge symmetries and boundary terms, paper id is c76118c9912bace830dd02dc5f8bc4b53f723019
+2024-12-20 18:46:59,221 - main.py[line:381] - INFO: SS citation found for c76118c9912bace830dd02dc5f8bc4b53f723019
+2024-12-20 18:46:59,909 - main.py[line:294] - INFO: ==== bib A short review on Noether's theorems, gauge symmetries and boundary terms updated sucess
+2024-12-20 18:46:59,909 - main.py[line:405] - INFO: semantic_scholar searching for Scientific Machine Learning through Physics-Informed Neural Networks: Where we are and What's next
+2024-12-20 18:47:00,661 - main.py[line:351] - INFO: SS search title found for Scientific Machine Learning through Physics-Informed Neural Networks: Where we are and What's next, paper id is e916f69e70a4321f21356f7ce360e380dd976a43
+2024-12-20 18:47:00,892 - main.py[line:381] - INFO: SS citation found for e916f69e70a4321f21356f7ce360e380dd976a43
+2024-12-20 18:47:01,514 - main.py[line:294] - INFO: ==== bib Scientific Machine Learning through Physics-Informed Neural Networks: Where we are and What's next updated sucess
+2024-12-20 18:47:01,514 - main.py[line:405] - INFO: semantic_scholar searching for Adam: A Method for Stochastic Optimization
+2024-12-20 18:47:02,138 - main.py[line:351] - INFO: SS search title found for Adam: A Method for Stochastic Optimization, paper id is a6cb366736791bcccc5c8639de5a8f9636bf87e8
+2024-12-20 18:47:02,273 - main.py[line:381] - INFO: SS citation found for a6cb366736791bcccc5c8639de5a8f9636bf87e8
+2024-12-20 18:47:06,344 - main.py[line:294] - INFO: ==== bib Adam: A Method for Stochastic Optimization updated sucess
+2024-12-20 18:47:06,344 - main.py[line:405] - INFO: semantic_scholar searching for CFDNet: a deep learning-based accelerator for fluid simulations
+2024-12-20 18:47:07,219 - main.py[line:351] - INFO: SS search title found for CFDNet: a deep learning-based accelerator for fluid simulations, paper id is d6c6718d129ed4cd315a8107604d4c4238c89689
+2024-12-20 18:47:07,378 - main.py[line:381] - INFO: SS citation found for d6c6718d129ed4cd315a8107604d4c4238c89689
+2024-12-20 18:47:07,765 - main.py[line:294] - INFO: ==== bib CFDNet: a deep learning-based accelerator for fluid simulations updated sucess
+2024-12-20 18:47:07,765 - main.py[line:405] - INFO: semantic_scholar searching for The Principle of Minimum Pressure Gradient: An Alternative Basis for Physics-Informed Learning of Incompressible Fluid Mechanics
+2024-12-20 18:47:08,418 - main.py[line:351] - INFO: SS search title found for The Principle of Minimum Pressure Gradient: An Alternative Basis for Physics-Informed Learning of Incompressible Fluid Mechanics, paper id is aacf97844c8b6c49a208b4c34751e9c95f598e08
+2024-12-20 18:47:08,754 - main.py[line:381] - INFO: SS citation found for aacf97844c8b6c49a208b4c34751e9c95f598e08
+2024-12-20 18:47:09,159 - main.py[line:294] - INFO: ==== bib The Principle of Minimum Pressure Gradient: An Alternative Basis for Physics-Informed Learning of Incompressible Fluid Mechanics updated sucess
+2024-12-20 18:47:09,159 - main.py[line:405] - INFO: semantic_scholar searching for Why is surface tension a force parallel to the interface?
+2024-12-20 18:47:10,463 - main.py[line:351] - INFO: SS search title found for Why is surface tension a force parallel to the interface?, paper id is 1c120720bcb241be9fa8b5b16a050594641def3e
+2024-12-20 18:47:10,631 - main.py[line:381] - INFO: SS citation found for 1c120720bcb241be9fa8b5b16a050594641def3e
+2024-12-20 18:47:11,282 - main.py[line:294] - INFO: ==== bib Why is surface tension a force parallel to the interface? updated sucess
+2024-12-20 18:47:11,282 - main.py[line:405] - INFO: semantic_scholar searching for Enhancing Computational Fluid Dynamics with Machine Learning
+2024-12-20 18:47:12,299 - main.py[line:351] - INFO: SS search title found for Enhancing Computational Fluid Dynamics with Machine Learning, paper id is f8ec29fb9933219e0949c59ddd7220fd1e2a1b89
+2024-12-20 18:47:12,438 - main.py[line:381] - INFO: SS citation found for f8ec29fb9933219e0949c59ddd7220fd1e2a1b89
+2024-12-20 18:47:15,063 - main.py[line:294] - INFO: ==== bib Enhancing Computational Fluid Dynamics with Machine Learning updated sucess
+2024-12-20 18:47:15,063 - main.py[line:405] - INFO: semantic_scholar searching for Liquid Hertz Contact: softness of weakly deformed drops on non-wetting substrates
+2024-12-20 18:47:15,691 - main.py[line:351] - INFO: SS search title found for Liquid Hertz Contact: softness of weakly deformed drops on non-wetting substrates, paper id is be9de9433b89a778856d1e362fc2bd2f2081e494
+2024-12-20 18:47:15,944 - main.py[line:381] - INFO: SS citation found for be9de9433b89a778856d1e362fc2bd2f2081e494
+2024-12-20 18:47:16,358 - main.py[line:294] - INFO: ==== bib Liquid Hertz Contact: softness of weakly deformed drops on non-wetting substrates updated sucess
+2024-12-20 18:47:16,358 - main.py[line:405] - INFO: semantic_scholar searching for Viscuous Bouncing
+2024-12-20 18:47:16,990 - main.py[line:356] - ERROR: SS search title error: Title match not found for Viscuous Bouncing
+2024-12-20 18:47:17,546 - main.py[line:294] - INFO: ==== bib Viscuous Bouncing updated bib not found
+2024-12-20 18:47:17,546 - main.py[line:405] - INFO: semantic_scholar searching for Water spring: a model for bouncing drops
+2024-12-20 18:47:18,355 - main.py[line:351] - INFO: SS search title found for Water spring: a model for bouncing drops, paper id is 46cb0fa3e13d84ba1790cf0a78368af792c31c24
+2024-12-20 18:47:18,497 - main.py[line:381] - INFO: SS citation found for 46cb0fa3e13d84ba1790cf0a78368af792c31c24
+2024-12-20 18:47:18,913 - main.py[line:294] - INFO: ==== bib Water spring: a model for bouncing drops updated sucess
+2024-12-20 18:47:18,913 - main.py[line:405] - INFO: semantic_scholar searching for A Simple Convergence Proof of Adam and Adagrad
+2024-12-20 18:47:19,500 - main.py[line:351] - INFO: SS search title found for A Simple Convergence Proof of Adam and Adagrad, paper id is 05b4436d504d5615801639a120a2c8eca7cbaabd
+2024-12-20 18:47:19,654 - main.py[line:381] - INFO: SS citation found for 05b4436d504d5615801639a120a2c8eca7cbaabd
+2024-12-20 18:47:20,698 - main.py[line:294] - INFO: ==== bib A Simple Convergence Proof of Adam and Adagrad updated sucess
+2024-12-20 18:47:20,698 - main.py[line:405] - INFO: semantic_scholar searching for UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
+2024-12-20 18:47:21,697 - main.py[line:351] - INFO: SS search title found for UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction, paper id is 3a288c63576fc385910cb5bc44eaea75b442e62e
+2024-12-20 18:47:21,966 - main.py[line:381] - INFO: SS citation found for 3a288c63576fc385910cb5bc44eaea75b442e62e
+2024-12-20 18:47:22,479 - main.py[line:294] - INFO: ==== bib UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction updated sucess
+2024-12-20 18:47:22,479 - main.py[line:405] - INFO: semantic_scholar searching for Inertio-capillary rebound of a droplet impacting a fluid bath
+2024-12-20 18:47:23,287 - main.py[line:351] - INFO: SS search title found for Inertio-capillary rebound of a droplet impacting a fluid bath, paper id is c49b518ca6627a72d2d1454ace4a3e8cf3deed7c
+2024-12-20 18:47:23,453 - main.py[line:381] - INFO: SS citation found for c49b518ca6627a72d2d1454ace4a3e8cf3deed7c
+2024-12-20 18:47:24,091 - main.py[line:294] - INFO: ==== bib Inertio-capillary rebound of a droplet impacting a fluid bath updated sucess
+2024-12-20 18:47:24,092 - main.py[line:405] - INFO: semantic_scholar searching for Impact of a rigid sphere onto an elastic membrane
+2024-12-20 18:47:24,252 - main.py[line:359] - WARNING: SS search title error: Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form for Impact of a rigid sphere onto an elastic membrane
+2024-12-20 18:47:28,149 - main.py[line:351] - INFO: SS search title found for Impact of a rigid sphere onto an elastic membrane, paper id is 2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-20 18:47:28,307 - main.py[line:381] - INFO: SS citation found for 2e3e5215e75cedd8b1f49234cd9ffd33bbac6658
+2024-12-20 18:47:28,740 - main.py[line:294] - INFO: ==== bib Impact of a rigid sphere onto an elastic membrane updated sucess
+2024-12-25 06:21:20,954 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.fufo.2022.100195
+2024-12-25 06:21:21,610 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-12-25 06:21:23,909 - main.py[line:509] - INFO: pushed to notion successfully
+2025-01-07 10:54:51,186 - main.py[line:127] - INFO: searching for https://arxiv.org/abs/2406.17138
+2025-01-07 10:54:51,188 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2406.17138&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-01-07 10:54:52,435 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-01-07 10:54:52,435 - main.py[line:177] - ERROR: search error: cannot access local variable 'search' where it is not associated with a value
+2025-01-07 10:57:02,411 - main.py[line:127] - INFO: searching for https://arxiv.org/abs/2406.17138
+2025-01-07 10:57:57,494 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2406.17138&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-01-07 10:57:58,400 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-01-07 11:06:48,862 - main.py[line:127] - INFO: searching for https://arxiv.org/abs/2406.17138
+2025-01-07 11:06:48,864 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2406.17138&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-01-07 11:06:49,772 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-01-07 11:06:50,982 - main.py[line:111] - INFO: downloaded 2406.17138v2.pdf
+2025-01-07 11:06:53,408 - main.py[line:512] - INFO: pushed to notion successfully
+2025-01-07 14:22:29,545 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.fufo.2022.100195
+2025-01-07 14:22:30,318 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-01-07 14:22:31,284 - main.py[line:447] - INFO: already exists in notion
+2025-01-08 15:30:19,477 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/2310.12886v1
+2025-01-08 15:30:19,480 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2310.12886&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-01-08 15:30:20,751 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-01-08 15:30:20,976 - main.py[line:111] - INFO: downloaded 2310.12886v1.pdf
+2025-01-08 15:30:21,648 - main.py[line:447] - INFO: already exists in notion
+2025-01-14 17:42:56,504 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.fbp.2023.11.004
+2025-01-14 17:42:57,310 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-01-14 17:42:59,978 - main.py[line:512] - INFO: pushed to notion successfully
+2025-02-11 10:34:43,799 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/1406.2661
+2025-02-11 10:34:43,802 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1406.2661&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-02-11 10:34:44,395 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-02-11 10:34:44,643 - main.py[line:111] - INFO: downloaded 1406.2661v1.pdf
+2025-02-11 10:34:45,748 - main.py[line:512] - INFO: pushed to notion successfully
+2025-02-11 10:35:31,357 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/1406.2661
+2025-02-11 10:35:31,360 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1406.2661&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-02-11 10:35:31,713 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-02-11 10:35:31,715 - main.py[line:111] - INFO: file 1406.2661v1.pdf already exists
+2025-02-11 10:35:32,311 - main.py[line:447] - INFO: already exists in notion
+2025-02-17 20:10:02,656 - main.py[line:127] - INFO: searching for https://doi.org/10.1002/bit.27848
+2025-02-17 20:10:03,117 - main.py[line:111] - INFO: downloaded a8ce04ebcb356b116a719ab0b81647d661765a0d.pdf
+2025-02-17 20:10:05,822 - main.py[line:512] - INFO: pushed to notion successfully
+2025-02-18 16:38:28,545 - main.py[line:127] - INFO: searching for https://doi.org/10.1016/j.cej.2014.08.077
+2025-02-18 16:38:30,072 - main.py[line:111] - INFO: downloaded 6b879a9886a51841e388284248db159cd4cb0305.pdf
+2025-02-18 16:38:31,188 - main.py[line:512] - INFO: pushed to notion successfully
+2025-02-21 13:09:22,100 - main.py[line:127] - INFO: searching for https://doi.org/10.3390/bioengineering11060546
+2025-02-21 13:09:23,661 - main.py[line:111] - INFO: downloaded 9950cf7a2cbeb1e473c69ee79b988313d22b2d6a.pdf
+2025-02-21 13:09:24,609 - main.py[line:512] - INFO: pushed to notion successfully
+2025-02-22 17:26:35,402 - main.py[line:127] - INFO: searching for https://arxiv.org/pdf/2201.03898
+2025-02-22 17:26:35,405 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2201.03898&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-02-22 17:26:35,764 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-02-22 17:26:35,931 - main.py[line:111] - INFO: downloaded 2201.03898v1.pdf
+2025-02-22 17:26:37,175 - main.py[line:512] - INFO: pushed to notion successfully
+2025-02-24 13:05:03,811 - main.py[line:127] - INFO: searching for https://arxiv.org/abs/1804.00183
+2025-02-24 13:05:03,817 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=1804.00183&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-02-24 13:05:04,177 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-02-24 13:05:04,177 - main.py[line:180] - ERROR: search error: cannot access local variable 'search' where it is not associated with a value
+2025-02-24 13:05:25,431 - main.py[line:127] - INFO: searching for https://doi.org/10.1146/annurev-fluid-010518-040547
+2025-02-24 13:05:25,970 - main.py[line:111] - INFO: downloaded cd74acb268404cde24f5131a22d04d48776b283e.pdf
+2025-02-24 13:05:28,135 - main.py[line:512] - INFO: pushed to notion successfully
+2025-02-24 13:19:39,678 - main.py[line:127] - INFO: searching for https://doi.org/10.1017/jfm.2016.615
+2025-02-24 13:19:39,871 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-02-24 13:19:41,580 - main.py[line:512] - INFO: pushed to notion successfully
+2025-02-24 13:21:54,476 - main.py[line:127] - INFO: searching for https://doi.org/10.1006/jcph.2002.7146
+2025-02-24 13:21:54,767 - main.py[line:111] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-02-24 13:21:57,009 - main.py[line:512] - INFO: pushed to notion successfully
+2025-03-02 14:07:00,954 - main2.py[line:128] - INFO: searching for https://arxiv.org/abs/2406.17138
+2025-03-02 14:07:00,963 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2406.17138&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-02 14:07:01,386 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-03-02 14:08:35,243 - main2.py[line:112] - INFO: downloaded 2406.17138v2.pdf
+2025-03-02 14:09:57,685 - main2.py[line:288] - INFO: already exists in notion
+2025-03-02 14:11:35,518 - main2.py[line:128] - INFO: searching for https://arxiv.org/abs/2502.20394
+2025-03-02 14:11:35,525 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2502.20394&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-02 14:11:35,861 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-03-02 14:11:46,508 - main2.py[line:112] - INFO: downloaded 2502.20394v1.pdf
+2025-03-02 14:15:47,997 - main2.py[line:128] - INFO: searching for https://arxiv.org/abs/2502.20394
+2025-03-02 14:15:48,000 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2502.20394&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-02 14:15:48,392 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-03-02 14:15:48,401 - main2.py[line:112] - INFO: file 2502.20394v1.pdf already exists
+2025-03-02 14:16:15,622 - main2.py[line:128] - INFO: searching for https://arxiv.org/abs/2502.20394
+2025-03-02 14:16:15,627 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2502.20394&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-02 14:16:15,956 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-03-02 14:16:15,957 - main2.py[line:112] - INFO: file 2502.20394v1.pdf already exists
+2025-03-02 14:17:12,497 - main2.py[line:356] - ERROR: pushed to notion failed, {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.properties.Tags.multi_select[0] should be an object, instead was `\"Physics\"`.","request_id":"033b892a-b6d5-43ca-a3fd-b59beedbd045"}
+2025-03-02 14:22:29,021 - main2.py[line:128] - INFO: searching for https://arxiv.org/abs/2502.20394
+2025-03-02 14:22:29,024 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2502.20394&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-02 14:22:29,454 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-03-02 14:22:29,471 - main2.py[line:112] - INFO: file 2502.20394v1.pdf already exists
+2025-03-02 14:23:26,609 - main2.py[line:353] - INFO: pushed to notion successfully
+2025-03-02 14:24:44,226 - main2.py[line:128] - INFO: searching for https://arxiv.org/abs/2502.20394
+2025-03-02 14:25:07,410 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2502.20394&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-02 14:25:07,803 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-03-02 14:42:25,430 - main2.py[line:128] - INFO: searching for https://arxiv.org/abs/2502.20394
+2025-03-02 14:42:25,432 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=&id_list=2502.20394&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-02 14:42:25,793 - __init__.py[line:584] - INFO: Got first page: 1 of 1 total results
+2025-03-02 14:42:25,796 - main2.py[line:112] - INFO: file 2502.20394v1.pdf already exists
+2025-03-02 14:42:26,862 - main2.py[line:353] - INFO: pushed to notion successfully

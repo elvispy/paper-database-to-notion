@@ -1,101 +1,123 @@
-# arxiv auto workflow
+# arxiv-workflow
 
-This is a automatic workflow for manage arxiv papers with notion.
+### Automatic pipeline to collect, store, and manage arXiv papers in **Notion** — with a user-friendly desktop app.
 
-if you like this project, please give me a star✨!
+---
 
-## background & motivation
+## 🌟 Why This Exists
 
-- **arxiv becomes a popular** platform for sharing scientific papers, as a AI researcher, I get papers almost from arxiv
-- there is no efficient way to manage papers for files, citations, notes, and other information. **[Endnote](https://endnote.com/)** manage citations mainly, **[Readpaper](https://readpaper.com/home/)** dones a good job for notes, files and inplace translations, but lacks of self-defined field and efficient search.
-- some paper release with arxiv, but soon will be accepted by a conference or journal,**how to update the bibtex and other information** if you want to cite it in your paper?
-- my solution is to build a **visualized database for papers via notion**, define my field and tags for papers, and use `Readpaper` to read them.
+- Researchers often discover papers via arXiv.
+- Managing PDFs, metadata, notes, and citations manually is slow and error-prone.
+- This tool automates the entire process:
+    - 🔄 Search by DOI, arXiv ID, or Semantic Scholar ID
+    - 📂 Create a Notion page with metadata
+    - 📁 Download and organize the PDF locally
 
-The problem is:
-when getting an interesting title of a new paper, I may do:
- 
-- opening url to search
-- create a new page in **notion**
-- copy and paste title, abstract, and other information manually
-- manually download pdf and store to local directory
-  
-it is very time-consuming and error-prone.
+---
 
+## 📊 The Core Idea
 
-## solution and features
-My solution is to build up a workflow，drop title or arxiv id，program will automatically search arxiv and get the paper information, 
-then create a new page in notion with the information，
-and also download the pdf file and store it to local directory.
-### 1. search arxiv and get paper information
-when find a paper in abs/pdf url, just modify url using predefined api, then your auto workflow will be launched:
-| before | after |
-| --- | --- |
-| ![image](assets/before.png)  | ![image](assets/after.png) |
-files will be downloaded, metainfos will be uploaded to notion!
+| Manual Process | After Using arxiv-workflow |
+|---|---|
+| Search on arXiv website | Search from the app |
+| Manually create Notion page | Notion page auto-created |
+| Download PDF manually | PDF auto-downloaded |
+| Copy-paste BibTeX | BibTeX fetched for you |
 
-### 2. auto bibtex refresh
-Access `127.0.0.1:8000/bibtex?refresh=true` to refresh bibtex by [semanticscholar api](https://www.semanticscholar.org/product/api), and update the bibtex field in notion.
-As there are rate limit for semanticscholar api, we choose to start a new thread in background to refresh bibtex with a long sleep interval.
-Access `127.0.0.1:8000/bibtex?refresh=true&all=true` to refresh all bibtex in the database, no matter the item has an bib entry or not.
-| start refresh | check refresh |
-| --- | --- |
-| ![image](assets/refresh.png)  | ![image](assets/refresh_running.png) |
-check `fetch.log` to see if refresh is successful.
+---
 
-### 3. export bibtex file for all your papers
-export bibtex file for all your papers by accessing `127.0.0.1:8000/bibtex`.
-![bib](assets/allbib.png)
+## 🛠️ Setup: Preparing Your Notion Database
 
+### Step 1: Duplicate the Template
+Duplicate this [Notion template](https://thorn-nymphea-be8.notion.site/5949a9924cc546799804a42ca4917d81) into your own workspace.
 
-## how to use
+### Step 2: Create a Notion Integration
+- Go to: [Notion Integrations](https://www.notion.so/my-integrations)
+- Create a new integration
+- Copy the **Internal Integration Token**
 
-### prepare notion database and notion token
-1. refer to my released [notion template](https://thorn-nymphea-be8.notion.site/5949a9924cc546799804a42ca4917d81), and add to your workspace.
-2. get the database id accroding to [notion doc](https://developers.notion.com/reference/retrieve-a-database)
-3. get the notion access token according to [notion doc](https://developers.notion.com/docs/getting-started#step-1-create-an-integration)
-4. test the notion api with `curl` command:
-   
-```bash
-curl -X GET https://api.notion.com/v1/databases/{database_id} \
-  -H "Authorization: Bearer {token}" \
-  -H "Notion-Version: 2021-08-16"
-```
+### Step 3: Connect Your Database
+- In your duplicated database, click "Share" and invite your integration.
+- Copy the database ID from the URL (it's the part after the last `/`).
 
-### from source code
+---
+
+## 🗂️ Configuring `arxiv-workflow`
+
+First time setup: Go to `Configurations > Set API Keys` in the app and enter:
+
+- Notion Token (from Step 2)
+- Notion Database ID (from Step 3)
+- Download Directory (where PDFs will be saved)
+
+---
+
+## 🚀 Using the App
+
+1. Open the app (`arxiv-workflow`)
+2. Enter a **paper identifier** (DOI, arXiv ID, or Semantic Scholar ID)
+3. Set an optional **subfolder** and **tags** (comma or semicolon separated)
+4. Click **Search and Download**
+5. PDF is saved locally + Notion page is created
+
+---
+
+## 📅 Example Inputs
+
+| Type | Example |
+|---|---|
+| DOI | `10.48550/arXiv.2106.04566` |
+| arXiv ID | `arxiv:2106.04566` or `2106.04566` |
+| Semantic Scholar | `SS12345678` (future support) |
+
+---
+
+## 📝 Installation Options
+
+### From Source (for Developers)
 ```bash
 pip install -r requirements.txt
-export NOTION_TOKEN=<your_notion_token>
-export NOTION_DATABASE_ID=<your_notion_database_id>
-export DOWNLOAD_DIR=<your_download_directory>
-export SS_KEY=<your_semanticscholar_api_key> # using an semanticscholar api key to get higher rate limit
-export SS_SLEEP_INTERVAL=<your_semanticscholar_api_sleep_interval> # default 200s with random range -40 t0 40s
-fastapi run server.py
+python QtUI.py
 ```
 
-### using docker
-```bash
-docker build -t arxiv-workflow .
+### Standalone App (for Users)
+- Download from: [Releases Page](https://github.com/yourusername/arxiv-workflow/releases)
+- Double-click `arxiv-workflow.app` (macOS) or `arxiv-workflow.exe` (Windows)
 
-export NOTION_TOKEN=<your_notion_token>
-export NOTION_DATABASE_ID=<your_notion_database_id>
-export DOWNLOAD_DIR=<your_download_directory>
-export SS_KEY=<your_semanticscholar_api_key>
-export SS_SLEEP_INTERVAL=<your_semanticscholar_api_sleep_interval> # default 200s with random range -40 t0 40s
+---
 
-docker run -it --rm -e NOTION_TOKEN=$NOTION_TOKEN \
-    -e NOTION_DATABASE_ID=$NOTION_DATABASE_ID \
-    -e DOWNLOAD_DIR=/download \
-    -v $DOWNLOAD_DIR:/download \
-    -p 8000:8000 \
-    arxiv-workflow
-```
+## ⚠️ Important Notes
 
-## TODOs
+- Works best with Python 3.10+
+- Requires a free Notion account
+- You must prepare your Notion database first using the template provided.
 
-- [x] release my notion database template
-- [x] bibtex auto refresh
-- [x] export bibtex file for all your papers,
-- [ ] support export bibtex file for specific paper with alias you've added
-- [ ] rest API documentation and CLI tools if needed
-- [ ] if system becomes complex, add config system
+---
+
+## 📂 Config File Location
+
+| OS | Path |
+|---|---|
+| macOS/Linux | `~/.arxiv-workflow/config.json` |
+| Windows | `%APPDATA%\arxiv-workflow\config.json` |
+
+---
+
+## 🔗 Useful Links
+
+- Notion API Docs: [https://developers.notion.com/reference/post-database-query](https://developers.notion.com/reference/post-database-query)
+- arXiv API Docs: [https://arxiv.org/help/api](https://arxiv.org/help/api)
+
+---
+
+## 📃 Contribute
+
+- Found a bug? Open an issue!
+- Want to improve it? Pull requests welcome.
+
+---
+
+## 💚 If you find this project helpful, give it a star on GitHub!
+
+---
 

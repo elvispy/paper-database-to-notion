@@ -15,17 +15,40 @@ import time
 import random
 
 rich.pretty.install()
-# formate with time, file:line number, message
-logging.basicConfig(
-    level=logging.INFO,
-    filename="fetch.log",
-    filemode="a",
-    format="%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s",
+
+# Create a logger
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+# Create a file handler
+file_handler = logging.FileHandler("fetch.log", mode="a")
+file_handler.setLevel(logging.INFO)
+
+# Create a console (stream) handler
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+
+# Define a common formatter
+formatter = logging.Formatter(
+    "%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s"
 )
+file_handler.setFormatter(formatter)
+console_handler.setFormatter(formatter)
+
+# Add handlers to the logger
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
+# # formate with time, file:line number, message
+# logging.basicConfig(
+#     level=logging.INFO,
+#     filename="fetch.log",
+#     filemode="a",
+#     format="%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s",
+# )
 
 http_headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"}
 
-class MyCliet(Client):
+class MyClient(Client):
     def __init__(self, *args, headers=None,**kwargs):
         super().__init__(*args, **kwargs)
         self.headers = headers or {}
@@ -69,40 +92,73 @@ class MyCliet(Client):
 
         return feed
 
-def auto_fetch_workflow(text):
+def auto_fetch_workflow(text: str, project="uncategorized") -> str:
     result = search(text)
-    if result:
-        dirpath = os.environ.get("DOWNLOAD_DIR", "./papers")
+    if result.status_code == 200:
+        dirpath = os.path.join(os.environ.get("DOWNLOAD_DIR", "./papers"), project)
         os.makedirs(dirpath, exist_ok=True)
         filename = result.entry_id.split("/")[-1] + ".pdf"
-        if not os.path.exists(os.path.join(dirpath, filename)):
-            download_response = requests.get(result.pdf_url, headers=http_headers)
-            with open(os.path.join(dirpath, filename), "wb") as f:
-                f.write(download_response.content)
-            download_log = f"downloaded {filename}"
-        else:
-            download_log = f"file {filename} already exists"
+        try:
+            if not os.path.exists(os.path.join(dirpath, filename)):
+                download_response = requests.get(result.pdf_url, headers=http_headers)
+                with open(os.path.join(dirpath, filename), "wb") as f:
+                    f.write(download_response.content)
+                download_log = f"downloaded {filename}"
+            else:
+                download_log = f"file {filename} already exists"
+        except Exception as e:
+            download_log = f"Couldnt download because of {e}"
         logging.info(download_log)
         notion_log = push_to_notion(result)
+
         return "\n\n".join([download_log, notion_log])
-    else:
-        return f"not found {text}"
+    return result.msg
 
-
-def search(text):
+def search(text: str) -> arxiv.Result:
     """given title or arxiv id, search the paper using arxiv api,
 
     Args:
-        text(str): the query
+        text str: the query
 
     Returns:
         reults type or None
     """
-    client = MyCliet(headers=http_headers)
+    client = MyClient(headers=http_headers)
     logging.info(f"searching for {text}")
-    if re.match(r".+?(abs|pdf|html)\/\d+.\w+", text):
+    results = MyClient(); results.msg = ""; results.status_code = 200
+    arxiv_bool = True
+    if "semanticscholar" in text or "doi.org" in text:
+        arxiv_bool = False
+        if "doi.org" in text:
+            paperId = f"doi:{re.sub(r'https://doi\.org/', '', text)}"
+        else:
+            paperId = re.search(r'/([a-f0-9])$', text).group(1)
+        # Define the API endpoint URL
+        url = f"http://api.semanticscholar.org/graph/v1/paper/{paperId}"
+        # Define the query parameters
+        query_params = {"fields": "title,url,publicationDate,abstract,openAccessPdf,tldr,citationStyles"}
+        # Send the API request
+        response = requests.get(url, params=query_params)
+        # Check response status
+        if response.status_code == 200:
+            response_data = response.json()
+            # Process and print the response data as needed
+            results.entry_id = response_data['url']
+            results.title = response_data['title']
+            results.summary = next((x for x in [response_data['abstract'], (response_data['tldr'] or {}).get('text', '-')] if x not in [None, '']), None)
+            results.updated = datetime.strptime(response_data['publicationDate'], "%Y-%m-%d") if response_data['publicationDate'] else datetime.today()
+            results.pdf_url = response_data['openAccessPdf']['url'] if (response_data['openAccessPdf'] is not None) else None            
+            results.bibtex = response_data['citationStyles']['bibtex']
+        else:
+            results.status_code = response.status_code
+            results.msg = f"Request failed with status code {response.status_code}: {response.text}"
+            logging.info(f"Request failed with status code {response.status_code}: {response.text}")
+        #return results
+
+        
+    elif re.search(r"arxiv", text): #re.match(r".+?(abs|pdf|html)\/\d+.\w+", text):
         # case of url, abs/arxiv_id or pdf/arxiv_id
-        arxiv_id = re.search(r"\d+.\w+", text).group()
+        arxiv_id = re.search(r'arxiv\.org/(abs|pdf)/((\d{4}\.\d{4,5})|([a-z\-]+/\d{7}))(v\d+)?', text).group(2)
         search_by_id = arxiv.Search(id_list=[arxiv_id])
         results = client.results(search_by_id)
     else:
@@ -111,12 +167,20 @@ def search(text):
         )
         results = client.results(search)
 
-    try:
-        result = next(results)
-    except Exception as e:
-        logging.error(f"search error: {e}")
-        return None
-    return result
+    if arxiv_bool == True:
+        try:
+            results = next(results)
+            if results.doi != None:
+                res = search(f"https://doi.org/{results.doi}")
+                results.bibtex = res.bibtex
+            else:
+                results.bibtex = ""
+            results.status_code = 200
+        except Exception as e:
+            logging.error(f"search error: {e}")
+            results.status_code = 404
+            results.msg = f"search error: {e}"
+    return results
 
 
 class IterNotionDatabase:
@@ -393,8 +457,11 @@ def push_to_notion(result):
             "type": "rich_text",
             "rich_text": [{"type": "text", "text": {"content": result.summary}}],
         },
+        "bib": {
+            "type": "rich_text",
+            "rich_text": [{"type": "text", "text": {"content": result.bibtex}}],
+        },
         "alias": {"type": "rich_text", "rich_text": []},
-        "bib": {"type": "rich_text", "rich_text": []},
         "my summary": {
             "type": "rich_text",
             "rich_text": [],
@@ -419,7 +486,7 @@ def push_to_notion(result):
             "type": "select",
             "select": {
                 "name": "toread",
-                "color": "pink",
+                "color": "red",
                 "description": None,
             },
         },
@@ -447,3 +514,12 @@ def push_to_notion(result):
         notion_log = f"pushed to notion failed, {response.text}"
         logging.error(notion_log)
     return notion_log
+
+
+if __name__ == '__main__':
+    
+    auto_fetch_workflow('https://arxiv.org/abs/2406.17138')
+    #auto_fetch_workflow('https://arxiv.org/abs/cond-mat/0212151')
+    #auto_fetch_workflow('https://doi.org/10.1016/j.cma.2007.07.016')
+    
+    #auto_fetch_workflow(r'https://www.semanticscholar.org/paper/Isogeometric-analysis-of-free-surface-flow-Akkerman-Bazilevs/da79e397f4445827b02c138f9e1c5c993b0aecbf')

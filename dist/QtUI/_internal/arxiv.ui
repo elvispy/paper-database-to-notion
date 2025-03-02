@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Paper Downloader</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+        <number>10</number>  <!-- Default is small (4 or 6), 10 is more roomy -->
+    </property>
+    <item>
+     <widget class="QLabel" name="label1">
+      <property name="text">
+       <string>Enter paper identifier:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="entry1"/>
+    </item>
+
+    <item>
+     <widget class="QLabel" name="label2">
+      <property name="text">
+       <string>Subfolder:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="entry2"/>
+    </item>
+
+    <item>
+     <widget class="QLabel" name="label3">
+      <property name="text">
+       <string>Tags (comma or semicolon separated):</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="tagsEntry"/>
+    </item>
+
+    <!-- Spacer between textboxes and button -->
+    <item>
+      <spacer name="spacer" >
+        <property name="orientation">
+          <enum>Vertical</enum>
+        </property>
+        <property name="sizeHint" >
+          <size>
+            <width>20</width>
+            <height>20</height>  <!-- Creates more space before the button -->
+          </size>
+        </property>
+      </spacer>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="searchButton">
+      <property name="text">
+       <string>Search and Download</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <addaction name="menuConfigurations"/>
+   <widget class="QMenu" name="menuConfigurations">
+    <property name="title">
+     <string>Configurations</string>
+    </property>
+    <addaction name="actionOpenConfig"/>
+   </widget>
+  </widget>
+  <action name="actionOpenConfig">
+   <property name="text">
+    <string>Set API Keys</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
