@@ -38,11 +38,13 @@ console_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
-CONFIGS = {}
 CONFIG_FILE = os.path.expanduser("~/.paper-database-to-notion/config.json")
-if os.path.exists(CONFIG_FILE):
-    with open(CONFIG_FILE, "r") as file:
-        CONFIGS = json.load(file)
+def load_configs():
+    if os.path.exists(CONFIG_FILE):
+        with open(CONFIG_FILE, "r") as file:
+            return json.load(file)
+    return {}
+CONFIGS = load_configs()
 
 
 http_headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"}
@@ -96,7 +98,8 @@ def auto_fetch_workflow(params):
     project = params.get('project', 'uncategorized')
     result = search(query)
     if result.status_code == 200:
-        dirpath = os.path.join(CONFIGS["download_dir"], project)
+        CONFIGS = load_configs() if CONFIGS == {} else CONFIGS
+        dirpath = os.path.join(CONFIGS.get("download_dir", "./papers"), project)
         os.makedirs(dirpath, exist_ok=True)
         filename = result.entry_id.split("/")[-1] + ".pdf"
         try:
@@ -361,10 +364,11 @@ if __name__ == '__main__':
     
     auto_fetch_workflow(
         {
-            "query":'https://arxiv.org/abs/2502.20394',
-            "project": "Physics",
-            "tags": ["Physics", "ML"]
+            "query":'https://doi.org/10.1016/j.bej.2024.109523',
+            "project": "Bioreactor",
+            "tags": ["CFD", "Bioreactor"]
         })
+    
     #auto_fetch_workflow('https://arxiv.org/abs/cond-mat/0212151')
     #auto_fetch_workflow('https://doi.org/10.1016/j.cma.2007.07.016')
     
