@@ -15,17 +15,6 @@ Automated research paper management system that builds a searchable, filterable 
 
 ---
 
-## 📊 The Core Idea
-
-| Manual Process | After Using arxiv-workflow |
-|---|---|
-| Search on arXiv website | Search from the app |
-| Manually create Notion page | Notion page auto-created |
-| Download PDF manually | PDF auto-downloaded |
-| Copy-paste BibTeX | BibTeX fetched for you |
-
----
-
 ## 🛠️ Setup: Preparing Your Notion Database
 
 ### Step 1: Duplicate the Template
@@ -37,24 +26,24 @@ Duplicate this [Notion template](https://thorn-nymphea-be8.notion.site/5949a9924
 - Copy the **Internal Integration Token**
 
 ### Step 3: Connect Your Database
-- In your duplicated database, click "Share" and invite your integration.
+- In your duplicated database, go to the three dots (upper right corner) -> Connections -> Connect your created integration
 - Copy the database ID from the URL (it's the part after the last `/`).
 
 ---
 
-## 🗂️ Configuring `arxiv-workflow`
+## 🗂️ Configuring `paper-database-to-notion`
 
-First time setup: Go to `Configurations > Set API Keys` in the app and enter:
+First time setup inside the app: Go to `Configurations > Set API Keys` in the app and enter:
 
 - Notion Token (from Step 2)
 - Notion Database ID (from Step 3)
-- Download Directory (where PDFs will be saved)
+- Download Directory (Optional, where PDFs will be saved)
 
 ---
 
 ## 🚀 Using the App
 
-1. Open the app (`arxiv-workflow`)
+1. Open the app (`paper-database-to-notion`)
 2. Enter a **paper identifier** (DOI, arXiv ID, or Semantic Scholar ID)
 3. Set an optional **subfolder** and **tags** (comma or semicolon separated)
 4. Click **Search and Download**
@@ -81,8 +70,8 @@ python QtUI.py
 ```
 
 ### Standalone App (for Users)
-- Download from: [Releases Page](https://github.com/yourusername/arxiv-workflow/releases)
-- Double-click `arxiv-workflow.app` (macOS) or `arxiv-workflow.exe` (Windows)
+- Download from: [Releases Page](https://github.com/yourusername/paper-database-to-notion/releases)
+- Double-click `paper-database-to-notion.app` (macOS) or `paper-database-to-notion.exe` (Windows)
 
 ---
 
@@ -98,8 +87,8 @@ python QtUI.py
 
 | OS | Path |
 |---|---|
-| macOS/Linux | `~/.arxiv-workflow/config.json` |
-| Windows | `%APPDATA%\arxiv-workflow\config.json` |
+| macOS/Linux | `~/.paper-database-to-notion/config.json` |
+| Windows | `%APPDATA%\paper-database-to-notion\config.json` |
 
 ---
 
