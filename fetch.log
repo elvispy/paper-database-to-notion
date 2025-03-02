@@ -8,3 +8,7 @@
 2025-03-02 16:27:02,757 - main2.py[line:130] - INFO: searching for https://doi.org/10.1016/j.bej.2024.109523
 2025-03-02 16:27:03,049 - main2.py[line:114] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
 2025-03-02 16:27:04,430 - main2.py[line:355] - INFO: pushed to notion successfully
+2025-03-02 16:42:48,871 - main2.py[line:131] - INFO: searching for https://doi.org/10.1371/journal.pone.0059671
+2025-03-02 16:44:13,402 - main2.py[line:131] - INFO: searching for https://doi.org/10.1371/journal.pone.0059671
+2025-03-02 16:44:14,810 - main2.py[line:115] - INFO: downloaded d5db14ea5a6b908a72eea665d0e9d071ab27f571.pdf
+2025-03-02 16:44:16,893 - main2.py[line:356] - INFO: pushed to notion successfully
