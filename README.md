@@ -25,7 +25,7 @@ Duplicate this [Notion template](https://thorn-nymphea-be8.notion.site/5949a9924
 - Create a new integration
 - Copy the **Internal Integration Token**
 
-### Step 3: Connect Your Database
+### Step 3: [Connect Your Database](https://www.notion.com/help/add-and-manage-connections-with-the-api#add-connections-to-pages)
 - In your duplicated database, go to the three dots (upper right corner) -> Connections -> Connect your created integration
 - Copy the database ID from the URL (it's the part after the last `/`).
 
@@ -56,8 +56,8 @@ First time setup inside the app: Go to `Configurations > Set API Keys` in the ap
 | Type | Example |
 |---|---|
 | DOI | `10.48550/arXiv.2106.04566` |
-| arXiv ID | `arxiv:2106.04566` or `2106.04566` |
-| Semantic Scholar | `SS12345678` (future support) |
+| arXiv ID/Link | `arxiv:2106.04566` or `2106.04566` |
+| Semantic Scholar Link | [Like this one](https://www.semanticscholar.org/paper/Impact-of-a-rigid-sphere-onto-an-elastic-membrane-Ag%C3%BCero-Alventosa/2e3e5215e75cedd8b1f49234cd9ffd33bbac6658) |
 
 ---
 
