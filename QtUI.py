@@ -9,7 +9,7 @@ from PyQt5 import uic
 from main2 import auto_fetch_workflow
 from config_dialog import ConfigDialog
 
-CONFIG_FILE = os.path.expanduser("~/.arxiv-workflow/config.json")
+CONFIG_FILE = os.path.expanduser("~/.paper-database-to-notion/config.json")
 os.makedirs(os.path.dirname(CONFIG_FILE), exist_ok=True)
 
 def load_config():

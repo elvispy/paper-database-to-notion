@@ -2,7 +2,7 @@ import os
 import json
 from PyQt5.QtWidgets import QDialog, QLabel, QLineEdit, QPushButton, QVBoxLayout, QHBoxLayout, QFileDialog
 
-CONFIG_FILE = os.path.expanduser("~/.arxiv-workflow/config.json")
+CONFIG_FILE = os.path.expanduser("~/.paper-database-to-notion/config.json")
 
 def load_config():
     if os.path.exists(CONFIG_FILE):

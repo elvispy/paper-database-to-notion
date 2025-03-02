@@ -1,5 +1,5 @@
 ([('QtUI',
-   '/Users/eaguerov/Documents/Github/arxiv-workflow/build/QtUI/QtUI',
+   '/Users/eaguerov/Documents/Github/paper-database-to-notion/build/QtUI/QtUI',
    'EXECUTABLE'),
   ('lib-dynload/_struct.cpython-312-darwin.so',
    '/Users/eaguerov/mambaforge/envs/notiondb/lib/python3.12/lib-dynload/_struct.cpython-312-darwin.so',
@@ -293,7 +293,7 @@
    '/Users/eaguerov/mambaforge/envs/notiondb/lib/libicui18n.75.dylib',
    'BINARY'),
   ('arxiv.ui',
-   '/Users/eaguerov/Documents/Github/arxiv-workflow/arxiv.ui',
+   '/Users/eaguerov/Documents/Github/paper-database-to-notion/arxiv.ui',
    'DATA'),
   ('certifi/py.typed',
    '/Users/eaguerov/mambaforge/envs/notiondb/lib/python3.12/site-packages/certifi/py.typed',
@@ -590,5 +590,5 @@
    '/Users/eaguerov/mambaforge/envs/notiondb/translations/qtbase_zh_CN.qm',
    'DATA'),
   ('base_library.zip',
-   '/Users/eaguerov/Documents/Github/arxiv-workflow/build/QtUI/base_library.zip',
+   '/Users/eaguerov/Documents/Github/paper-database-to-notion/build/QtUI/base_library.zip',
    'DATA')],)

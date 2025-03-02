@@ -39,7 +39,7 @@ logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
 CONFIGS = {}
-CONFIG_FILE = os.path.expanduser("~/.arxiv-workflow/config.json")
+CONFIG_FILE = os.path.expanduser("~/.paper-database-to-notion/config.json")
 if os.path.exists(CONFIG_FILE):
     with open(CONFIG_FILE, "r") as file:
         CONFIGS = json.load(file)

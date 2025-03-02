@@ -18,7 +18,7 @@ export SS_KEY=Hg3W2wCtsEyjvsc5cdJi8QyjcBTgyrh8aXkQ3QPe
 export SS_SLEEP_INTERVAL=3
 
 # Run the Python UI script
-cd ~/Documents/Github/arxiv-workflow/
+cd ~/Documents/Github/paper-database-to-notion/
 python UI.py
 
 # Uncomment the line below to run the FastAPI server script instead of the UI
