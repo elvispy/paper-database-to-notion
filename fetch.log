@@ -1,0 +1,10 @@
+2025-03-02 16:22:47,195 - main2.py[line:128] - INFO: searching for http://dx.doi.org/10.1002/aic.15442
+2025-03-02 16:22:47,835 - main2.py[line:156] - INFO: Request failed with status code 404: {"error":"Paper with id doi:http://dx.doi.org/10.1002/aic.15442 not found"}
+
+2025-03-02 16:23:36,260 - main2.py[line:128] - INFO: searching for https://doi.org/10.1016/j.bej.2024.109523
+2025-03-02 16:24:28,402 - main2.py[line:128] - INFO: searching for https://doi.org/10.1016/j.bej.2024.109523
+2025-03-02 16:24:28,790 - main2.py[line:112] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-03-02 16:24:30,086 - main2.py[line:353] - INFO: pushed to notion successfully
+2025-03-02 16:27:02,757 - main2.py[line:130] - INFO: searching for https://doi.org/10.1016/j.bej.2024.109523
+2025-03-02 16:27:03,049 - main2.py[line:114] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-03-02 16:27:04,430 - main2.py[line:355] - INFO: pushed to notion successfully
