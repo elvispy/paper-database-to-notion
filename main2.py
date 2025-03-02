@@ -97,8 +97,8 @@ def auto_fetch_workflow(params):
     query = params['query']
     project = params.get('project', 'uncategorized')
     result = search(query)
+    CONFIGS = load_configs()
     if result.status_code == 200:
-        CONFIGS = load_configs() if CONFIGS == {} else CONFIGS
         dirpath = os.path.join(CONFIGS.get("download_dir", "./papers"), project)
         os.makedirs(dirpath, exist_ok=True)
         filename = result.entry_id.split("/")[-1] + ".pdf"
