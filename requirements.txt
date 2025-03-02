@@ -1,2 +1,4 @@
+PyQt5
+notion-client
 arxiv
-fastapi[standard]
+requests

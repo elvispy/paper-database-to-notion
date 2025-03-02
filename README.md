@@ -1,6 +1,6 @@
-# arxiv-workflow
+# paper-database-to-notion
 
-### Automatic pipeline to collect, store, and manage arXiv papers in **Notion** — with a user-friendly desktop app.
+Automated research paper management system that builds a searchable, filterable database in Notion. Supports importing metadata and PDFs from arXiv, Semantic Scholar, and DOI. Ideal for researchers who want to stay organized without manual data entry.
 
 ---
 
