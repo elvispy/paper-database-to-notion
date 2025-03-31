@@ -12,3 +12,51 @@
 2025-03-02 16:44:13,402 - main2.py[line:131] - INFO: searching for https://doi.org/10.1371/journal.pone.0059671
 2025-03-02 16:44:14,810 - main2.py[line:115] - INFO: downloaded d5db14ea5a6b908a72eea665d0e9d071ab27f571.pdf
 2025-03-02 16:44:16,893 - main2.py[line:356] - INFO: pushed to notion successfully
+2025-03-03 16:48:26,030 - main2.py[line:131] - INFO: searching for https://doi.org/10.1146/annurev.fluid.31.1.567
+2025-03-03 16:48:26,241 - main2.py[line:115] - INFO: Couldnt download because of Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-03-03 16:48:29,127 - main2.py[line:356] - INFO: pushed to notion successfully
+2025-03-05 13:13:46,115 - main2.py[line:131] - INFO: searching for https://doi.org/10.1017/S0962492913000056
+2025-03-05 13:13:48,449 - main2.py[line:115] - INFO: downloaded f184460e5ad21fa74978afbce56159e4e9e61f8d.pdf
+2025-03-05 13:13:51,743 - main2.py[line:356] - INFO: pushed to notion successfully
+2025-03-13 12:50:33,132 - main2.py[line:131] - INFO: searching for https://www.semanticscholar.org/paper/Interface-capturing-methods-for-two-phase-flows-:-Mirjalili-Jain/558654ae0ae6597e10a4994d7534da7edd369054
+2025-03-13 12:51:19,242 - main2.py[line:131] - INFO: searching for https://www.semanticscholar.org/paper/Interface-capturing-methods-for-two-phase-flows-:-Mirjalili-Jain/558654ae0ae6597e10a4994d7534da7edd369054
+2025-03-21 09:34:27,749 - main2.py[line:131] - INFO: searching for https://doi.org/10.1016/j.compfluid.2023.105971
+2025-03-21 09:34:28,009 - main2.py[line:115] - INFO: Couldnt download because of Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-03-21 09:34:29,282 - main2.py[line:356] - INFO: pushed to notion successfully
+2025-03-21 09:44:45,115 - main2.py[line:131] - INFO: searching for https://doi.org/10.1016/j.fbp.2023.11.004
+2025-03-21 09:44:45,564 - main2.py[line:115] - INFO: Couldnt download because of Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-03-21 09:44:45,924 - main2.py[line:291] - INFO: already exists in notion
+2025-03-21 09:54:34,585 - main2.py[line:131] - INFO: searching for doi:10.1017/jfm.2011.335
+2025-03-21 09:54:34,589 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=doi%3A10.1017%2Fjfm.2011.335&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-21 09:54:35,011 - __init__.py[line:581] - INFO: Got empty first page; stopping generation
+2025-03-21 09:54:35,012 - main2.py[line:184] - ERROR: search error: 
+2025-03-21 10:00:51,364 - main2.py[line:131] - INFO: searching for doi:10.1111/1541-4337.12678
+2025-03-21 10:00:51,366 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=doi%3A10.1111%2F1541-4337.12678&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-21 10:00:51,651 - __init__.py[line:581] - INFO: Got empty first page; stopping generation
+2025-03-21 10:00:51,652 - main2.py[line:184] - ERROR: search error: 
+2025-03-31 13:19:37,920 - main2.py[line:131] - INFO: searching for DOI:10.1111/1541-4337.12678
+2025-03-31 13:19:37,922 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=DOI%3A10.1111%2F1541-4337.12678&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-31 13:19:38,321 - __init__.py[line:581] - INFO: Got empty first page; stopping generation
+2025-03-31 13:19:38,321 - main2.py[line:184] - ERROR: search error: 
+2025-03-31 13:24:22,406 - main2.py[line:131] - INFO: searching for DOI:10.1111/1541-4337.12678
+2025-03-31 13:24:22,407 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=DOI%3A10.1111%2F1541-4337.12678&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-31 13:24:22,685 - __init__.py[line:581] - INFO: Got empty first page; stopping generation
+2025-03-31 13:24:22,685 - main2.py[line:184] - ERROR: search error: 
+2025-03-31 13:27:22,895 - main2.py[line:131] - INFO: searching for DOI:10.1111/1541-4337.12678
+2025-03-31 13:27:22,897 - __init__.py[line:658] - INFO: Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=DOI%3A10.1111%2F1541-4337.12678&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-03-31 13:27:23,190 - __init__.py[line:581] - INFO: Got empty first page; stopping generation
+2025-03-31 13:27:23,191 - main2.py[line:184] - ERROR: search error: 
+2025-03-31 13:32:34,844 - main2.py[line:131] - INFO: searching for DOI: 10.1111/1541-4337.12678
+2025-03-31 13:33:01,300 - main2.py[line:131] - INFO: searching for DOI: 10.1111/1541-4337.12678
+2025-03-31 13:34:06,819 - main2.py[line:131] - INFO: searching for DOI: 10.1111/1541-4337.12678
+2025-03-31 13:34:07,915 - main2.py[line:115] - INFO: downloaded 5852f65846f71e8aa4980fde190be4814f46693e.pdf
+2025-03-31 13:34:08,821 - main2.py[line:357] - INFO: pushed to notion successfully
+2025-03-31 13:34:47,937 - main2.py[line:131] - INFO: searching for https://doi.org/10.1111/1541-4337.12678
+2025-03-31 13:34:48,120 - main2.py[line:115] - INFO: file 5852f65846f71e8aa4980fde190be4814f46693e.pdf already exists
+2025-03-31 13:34:48,368 - main2.py[line:292] - INFO: already exists in notion
+2025-03-31 13:34:54,982 - main2.py[line:131] - INFO: searching for https://doi.org/10.1111/1541-4337.12678
+2025-03-31 13:34:55,153 - main2.py[line:115] - INFO: file 5852f65846f71e8aa4980fde190be4814f46693e.pdf already exists
+2025-03-31 13:34:55,420 - main2.py[line:292] - INFO: already exists in notion
+2025-03-31 13:35:04,571 - main2.py[line:131] - INFO: searching for https://doi.org/10.1111/1541-4337.12678
+2025-03-31 13:35:04,731 - main2.py[line:115] - INFO: file 5852f65846f71e8aa4980fde190be4814f46693e.pdf already exists
+2025-03-31 13:35:05,269 - main2.py[line:292] - INFO: already exists in notion
