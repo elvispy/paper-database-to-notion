@@ -131,10 +131,11 @@ def search(text: str) -> arxiv.Result:
     logging.info(f"searching for {text}")
     results = MyClient(); results.msg = ""; results.status_code = 200
     arxiv_bool = True
-    if "semanticscholar" in text or "doi.org" in text:
+    if "semanticscholar" in text or "doi" in text.lower():
         arxiv_bool = False
-        if "doi.org" in text:
-            paperId = f"doi:{re.sub(r'https://doi\.org/', '', text)}"
+        if "doi" in text.lower():
+            match = re.search(r'(?:doi:\s*|https://doi\.org/)(10\.\d{4,}[^\s]+)', text, re.I)
+            paperId = f"doi:{match.group(1)}" # f"doi:{re.sub(r'https://doi\.org/', '', text)}"
         else:
             paperId = re.search(r'/([a-f0-9])$', text).group(1)
         # Define the API endpoint URL
@@ -362,12 +363,23 @@ def push_to_notion(result, tags=[]):
 
 if __name__ == '__main__':
     
+    """
     auto_fetch_workflow(
         {
             "query":'https://doi.org/10.1016/j.bej.2024.109523',
             "project": "Bioreactor",
             "tags": ["CFD", "Bioreactor"]
+        })"
+    """
+    
+    auto_fetch_workflow(
+        {
+            "query":'https://doi.org/10.1111/1541-4337.12678', # DOI: 10.1111/1541-4337.12678', #
+            "project": "Bioreactor",
+            "tags": ["Bioreactor"]
         })
+    
+    
     
     #auto_fetch_workflow('https://arxiv.org/abs/cond-mat/0212151')
     #auto_fetch_workflow('https://doi.org/10.1016/j.cma.2007.07.016')
